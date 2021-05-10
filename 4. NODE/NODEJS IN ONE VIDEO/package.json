@@ -1,0 +1,14 @@
+{
+  "name": "nodejs_in_one_video",
+  "version": "1.0.0",
+  "description": "node js tutorial in one video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "itvmh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}

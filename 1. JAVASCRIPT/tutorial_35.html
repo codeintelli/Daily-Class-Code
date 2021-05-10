@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    JAVASCRIPT PROMISE FUNCTION:
+    <h1>Students Details</h1>
+    <ul id="students"></ul>
+    <script>
+      console.log("promise function in JAVASCRIPT");
+
+      /* 
+ /* 
+    What is a Promise?
+    A promise in JavaScript is similar to a promises we do in real life. When we make a promise, it is a guarantee that in future, we are going to do something. A promise has two possible outcomes: it will be kept when the time comes, or it will not. Similarly, in JavaScript, when we define a promise, either it will be resolved when the time comes, or it will get rejected. According to MDN, “the Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.”
+
+
+    A promise has three states:
+
+    pending: It is the initial state.
+    Fulfilled: It indicates that the promised operation was successful.
+    Rejected: It indicates that the promised operation was unsuccessful.
+   
+   
+    A promise is created using a constructor that takes a call back function with two arguments resolve and reject in line 1. If the task is successful(x===y), the promise is resolved. If the task is unsuccessful(x is not equal to y), then the promise is rejected. The then() method is called if the promise is resolved, and the catch() method is called when the promise is rejected or if an error occurred during the code execution.
+
+    Promises are the ideal choice for asynchronous programming. Promises can handle multiple asynchronous operations easily and are better at error handling as compared to callbacks and events.
+
+    Benefits of Promises:-
+    It improves the code readability
+    It is better in the handling of asynchronous operations
+    It has a better flow of control definition in asynchronous logic
+    It is better in error handling
+
+    
+
+
+
+
+promise:Best tutorial on that topic
+-resolve: promise full fill 
+-reject: promise reject 
+-pending: on going process
+
+*/
+      //   function func1() {
+      //     return new Promise(function (resolve, reject) {
+      //       setTimeout(() => {
+      //         const error = true;
+      //         if (!error) {
+      //           console.log("function: your promise has been resolved");
+      //           resolve();
+      //         } else {
+      //           console.log("function: your promise has not been resolved");
+      //           reject("Sorry not fullfilled ");
+      //         }
+      //       }, 1000);
+      //     });
+      //   }
+
+      //   func1()
+      //     .then(function () {
+      //       console.log("this will print when promise become fullfill");
+      //     })
+      //     .catch(function (error) {
+      //       console.log("this will print if any error occured reason:" + error);
+      //     });
+
+      console.log("callback function in javascript");
+
+      const students = [
+        { name: "Rohan", subject: "Javascript" },
+        { name: "Shiva", subject: "Python" },
+      ];
+
+      function enrollStudent(student) {
+        return new Promise(function (resolve, reject) {
+          setTimeout(function () {
+            students.push(student);
+            console.log("Student have been enrolled");
+
+            const error = true;
+            if (!error) {
+              resolve();
+            } else {
+              reject();
+            }
+          }, 1000);
+        });
+      }
+
+      function getStudent() {
+        setTimeout(function () {
+          let str = "";
+          students.forEach(function (students) {
+            str += `<li>${students.name}</li>`;
+          });
+          document.getElementById("students").innerHTML = str;
+          console.log("Student have been fetched");
+        }, 8000);
+      }
+      let newStudent = { name: "mahadev", subject: "GO" };
+      enrollStudent(newStudent)
+        .then(getStudent)
+        .catch(function () {
+          console.log("error occured");
+        });
+      //   getStudent();
+      //   console.log(students);
+    </script>
+  </body>
+</html>

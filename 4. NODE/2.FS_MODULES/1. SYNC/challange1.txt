@@ -1,0 +1,7 @@
+challange 1
+1. create a folder using fs module
+2. create a file in that folder using fs module
+3. add some data into the created file using fs module
+4. rename the file that you have created  using fs module
+5. deleting the file that you have created  using fs module
+6. deleting the create folder that you have created using fs module

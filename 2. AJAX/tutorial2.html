@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="loaddata">
+        <h2>This session is going to awesome learing</h2>
+      </div>
+      <button class="btn btn-success" onclick="myfun()">Click Button</button>
+    </div>
+    <!-- the XMLHTTPRequest object is used to exchange data with a server to send a request to a server we use the open and send methods of the xmlhttprequest
+    object: open(method, url,async) specifies the type of request method: the
+    type of request (get or post) url the server file location asyc: true/false
+    send(): sends the request to the user for get AJAX - server response the
+    readyState property holds the status of the XMLHttpRequest the
+    onreadyStatechange property defines a function to be exected when the
+    readystate changes. the status property and the status Text property holds
+    the status of the XMLHttpRequest object. -->
+    <script>
+      function myfun() {
+        var req = new XMLHttpRequest();
+        req.open("GET", "tut1_filename.html", true);
+        req.send();
+        req.onreadystatechange = function () {
+          if (req.readyState == 4 && req.status == 200) {
+            document.getElementById("loaddata").innerHTML = req.responseText;
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

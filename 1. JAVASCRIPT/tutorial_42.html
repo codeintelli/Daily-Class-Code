@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Iterators in javascript</h1>
+    <script type="text/javascript">
+      console.log("iterators in javascript");
+      const myarray = [
+        "ANJALI",
+        "KRUPA",
+        "NIMISHA",
+        "KARISHMA",
+        "RINKAL",
+        "AARTI",
+        "bhavisha",
+      ];
+
+      function PeoplesIterators(values) {
+        let nextIndex = 0;
+        //   we will return an object
+        return {
+          next: function () {
+            if (nextIndex < values.length) {
+              //   we will return this object
+              return {
+                value: values[nextIndex++],
+                done: false,
+              };
+            } else {
+              //we will return below object with only done
+              return {
+                done: true,
+              };
+            }
+          },
+        };
+      }
+      // itteration and itterator
+      /* iteration means we can continueously repeating  the value or statement and the flow of the statement is not in our hand but if we are using itterator we can handle the whole iteration using next method and this will be mostly work in password generator*/
+      //   using th iterators
+      const women = PeoplesIterators(myarray);
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+      console.log(women.next());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT TUTORIAL</title>
+  </head>
+  <body>
+    PLEASE OPEN CONSOLE SCREEN TO SEE OUTPUT OR PRESS CTRL+SHIFT+I
+    <script>
+      /* 
+1. log 
+2. assert
+3. table
+4. warn
+5. error
+6. count 
+7. group\
+8. time 
+*/ console.log(
+        "tutorial 1 console class in deep"
+      );
+      console.time();
+      console.log("Hello World");
+      console.log(1);
+      console.log(true);
+      console.log(null);
+      console.log([1, 2, 3, 4, 5]);
+      console.log({ name: "shiva", age: 32, tutorial: 1 });
+      console.table({ name: "shiva", age: 32, tutorial: 1 });
+      let age = 2;
+      console.assert(age < 18, "expression is false");
+      console.warn("please check age");
+      console.error("please check age");
+
+      console.group("simple");
+      console.log("sub group");
+      console.log("sub group");
+      console.groupEnd("simples");
+      // ECMA 2019
+      const spacing = "8px";
+      const mystyle = `padding: ${spacing}; background-color:white; color: blue; font-style:italic; border: 1px solid dotted; font-size: 1rem;`;
+      console.log("%cSHIVA", mystyle);
+      // user define console log
+      console.timeEnd();
+    </script>
+  </body>
+</html>

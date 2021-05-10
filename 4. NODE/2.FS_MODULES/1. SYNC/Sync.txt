@@ -1,0 +1,1 @@
+sync async async os module path module import export module or create own modules npm global module module wrapper function

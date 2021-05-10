@@ -1,0 +1,266 @@
+{
+	"status": "ok",
+	"totalResults": 12533,
+	"articles": [
+		{
+		"source": {
+		"id": "engadget",
+		"name": "Engadget"
+		},
+		"author": "Jon Fingas",
+		"title": "Tesla buys $1.5 in Bitcoin, will soon accept it as payment",
+		"description": "Elon Musk’s cryptocurrency hype was more than just idle talk. CNBC reports that Tesla not only bought $1.5 billion worth of Bitcoin to help “diversify and maximize” its returns, but will start taking payments using the digital asset sometime in the “near futu…",
+		"url": "https://www.engadget.com/tesla-to-take-bitcoin-payments-140109988.html",
+		"urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-02/389f89e0-6a11-11eb-b5c5-309f2241e56a",
+		"publishedAt": "2021-02-08T14:01:09Z",
+		"content": "Elon Musks cryptocurrency hype was more than just idle talk. CNBCreports that Tesla not only bought $1.5 billion worth of Bitcoin to help diversify and maximize its returns, but will start taking pay… [+1182 chars]"
+		},
+		{
+		"source": {
+		"id": "the-verge",
+		"name": "The Verge"
+		},
+		"author": "Justine Calma",
+		"title": "Tesla’s $1.5 billion bitcoin purchase clashes with its environmental aspirations",
+		"description": "Tesla announced this week that it purchased $1.5 billion in bitcoin and plans to accept bitcoin as payment in the future. CEO Elon Musk might have boosted bitcoin’s credibility. But greenhouse gas emissions from bitcoin are on the rise as the price of the cry…",
+		"url": "https://www.theverge.com/2021/2/9/22275243/teslas-bitcoin-purchase-clashes-climate-change-mission",
+		"urlToImage": "https://cdn.vox-cdn.com/thumbor/eQST6cDSwG_MASzsxTUv3igFdxU=/0x430:6000x3571/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/22293241/1231048263.jpg",
+		"publishedAt": "2021-02-09T23:10:46Z",
+		"content": "Tesla, led by Elon Musk, confirmed that it purchased about $ 1.5 billion in bitcoin in January and expects to start accepting it as a payment in the future.  | Photo by Artur Widak/NurPhoto via Getty… [+6118 chars]"
+		},
+		{
+		"source": {
+		"id": "wired",
+		"name": "Wired"
+		},
+		"author": "Gregory Barber",
+		"title": "Would You Trade a Bitcoin for a Tesla?",
+		"description": "The maker of electric vehicles said it had invested $1.5 billion in bitcoin and plans to accept the cryptocurrency as payment for its cars.",
+		"url": "https://www.wired.com/story/would-you-trade-bitcoin-tesla/",
+		"urlToImage": "https://media.wired.com/photos/6021da4ff1bf194f33695dc3/191:100/w_1280,c_limit/business_tesla-bitcoin_1229893729.jpg",
+		"publishedAt": "2021-02-09T12:00:00Z",
+		"content": "For a brief moment on Sunday, before Tesla said it had invested $1.5 billion in bitcoin and planned to let people use the cryptocurrency to pay for its cars, bitcoins price could be expressed with a … [+3302 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Manish Singh",
+		"title": "Jack Dorsey and Jay Z invest $23.6 million to fund Bitcoin development",
+		"description": "Twitter and Square CEO Jack Dorsey and rapper Jay Z have created an endowment to fund bitcoin development initially in Africa and India, Dorsey said Friday. The duo is putting 500 bitcoin, which is currently worth $23.6 million, in the endowment called ₿trust…",
+		"url": "http://techcrunch.com/2021/02/12/jack-dorsey-and-jay-z-invest-23-6-million-to-fund-bitcoin-development/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2020/11/GettyImages-887657568.jpg?w=600",
+		"publishedAt": "2021-02-12T10:51:25Z",
+		"content": "Twitter and Square CEO Jack Dorsey and rapper Jay Z have created an endowment to fund bitcoin development initially in Africa and India, Dorsey said Friday.\r\nThe duo is putting 500 bitcoin, which is … [+3984 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Alex Wilhelm",
+		"title": "Tesla buys $1.5B in bitcoin, may accept the cryptocurrency as payment in the future",
+		"description": "Today in an SEC filing, Tesla disclosed that it has acquired $1.5 billion in bitcoin, the popular cryptocurrency. Moreover, the company noted that it may also accept bitcoin in the future as a form of payment for its cars, though it did allow that there is so…",
+		"url": "http://techcrunch.com/2021/02/08/tesla-buys-1-5b-in-bitcoin-may-accept-the-cryptocurrency-as-payment-in-the-future/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2020/09/tesla-glitch1.jpg?w=712",
+		"publishedAt": "2021-02-08T13:02:03Z",
+		"content": "Today in an SEC filing, Tesla disclosed that it has acquired $1.5 billion in bitcoin, the popular cryptocurrency. Moreover, the company noted that it may also accept bitcoin in the future as a form o… [+2230 chars]"
+		},
+		{
+		"source": {
+		"id": "wired",
+		"name": "Wired"
+		},
+		"author": "WIRED Staff",
+		"title": "This Cryptocurrency Is Really Burning a Hole in My Pocket",
+		"description": "This week, we discuss crypto’s role in the future of shopping. When can we to use it to buy everything from Nikes to Teslas?",
+		"url": "https://www.wired.com/story/gadget-lab-podcast-491/",
+		"urlToImage": "https://media.wired.com/photos/602589a9e27a393fd0c185af/191:100/w_1280,c_limit/Gear-Tesla-GL-Podcast-1227575736.jpg",
+		"publishedAt": "2021-02-12T13:00:00Z",
+		"content": "When Bitcoin first appeared out of digital thin air, it was hailed as having the potential to upend the way people spent money. But more than a decade later, cryptocurrency is still only trickling in… [+2039 chars]"
+		},
+		{
+		"source": {
+		"id": "engadget",
+		"name": "Engadget"
+		},
+		"author": "Steve Dent",
+		"title": "Mt. Gox exchange users may finally get to recover some of their lost Bitcoin",
+		"description": "When Mt. Gox went bankrupt in 2014, it was the world’s largest Bitcoin exchange, holding 850,000 Bitcoins from thousands of users. Now, creditors might finally be able to get a portion of those riches back. One of Mt. Gox’s largest creditors, CoinLab, said an…",
+		"url": "https://www.engadget.com/mt-gox-bitcoin-users-recovery-153025831.html",
+		"urlToImage": "https://o.aolcdn.com/images/dims?resize=1200%2C630&crop=1200%2C630%2C0%2C0&quality=95&image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-images%2F2019-06%2Fcedcace0-91a9-11e9-bffe-eca270dadf9c&client=amp-blogside-v2&signature=b2965154f62f66ab9ffbed4ae4ed98155a7bb786",
+		"publishedAt": "2021-01-18T21:30:25Z",
+		"content": "When Mt. Gox went bankrupt in 2014, it was the world’s largest Bitcoin exchange, holding 850,000 Bitcoins from thousands of users. Now, creditors might finally be able to get a portion of those riche… [+626 chars]"
+		},
+		{
+		"source": {
+		"id": "mashable",
+		"name": "Mashable"
+		},
+		"author": "Joseph Green",
+		"title": "Learn how to responsibly invest in Bitcoin with this bundle of courses",
+		"description": "TL;DR: The Bitcoin and Cryptocurrency Mastery Bundle is on sale for £21.11 as of Jan. 28, saving you 70% on list price.\n\nBitcoin and the blockchain are not going away anytime soon. Though market's volatility may put off some investors, there are ways to find …",
+		"url": "https://mashable.com/uk/shopping/jan-28-bitcoin-cryptocurrency-online-courses-sale/",
+		"urlToImage": "https://mondrian.mashable.com/2021%252F01%252F28%252Fa3%252F4d5390f78a6f43dfb9fafcbec5ba3bfc.8c330.jpg%252F1200x630.jpg?signature=sHhBEh8D-cE3Jy5685Ge1Bsdg8E=",
+		"publishedAt": "2021-01-28T05:10:00Z",
+		"content": "TL;DR: The Bitcoin and Cryptocurrency Mastery Bundle is on sale for £21.11 as of Jan. 28, saving you 70% on list price.\r\nBitcoin and the blockchain are not going away anytime soon. Though market's vo… [+3074 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "New York Times"
+		},
+		"author": "The New York Times",
+		"title": "Bitcoin Continues to Soar, Fueled by Tesla Announcement",
+		"description": "Bitcoin topped $48,000 per coin after Tesla said that it bought $1.5 billion worth of the digital currency. Read the latest economic updates.",
+		"url": "https://www.nytimes.com/live/2021/02/09/business/stock-market-today",
+		"urlToImage": "https://static01.nyt.com/images/2021/02/09/business/09econ-briefing-markets1/merlin_183420414_bee83a9c-99fa-410a-989b-243cf8ea0439-facebookJumbo.jpg",
+		"publishedAt": "2021-02-09T13:18:43Z",
+		"content": "LiveUpdated Feb. 9, 2021, 8:01 a.m. ET\r\nFeb. 9, 2021, 8:01 a.m. ET\r\nHeres what you need to know:\r\nBitcoin continued its recent rise, fueled by Teslas announcement on Monday that it had purchased $1.5… [+8933 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "Gizmodo.com"
+		},
+		"author": "Alyse Stanley",
+		"title": "Bitcoin Burning a Hole in Your Pocket? Now You Can Spend It Using Apple Pay",
+		"description": "In case you haven’t noticed, Bitcoin’s having a bit of a moment. The cryptocurrency’s value reached record heights in recent weeks, you’ll soon be able to buy a Tesla with it, and, as of Friday, you can now spend Bitcoin (and other cryptocurrencies) via Apple…",
+		"url": "https://gizmodo.com/bitcoin-burning-a-hole-in-your-pocket-now-you-can-spen-1846265076",
+		"urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/za0f2uahpeppxnkvipsp.jpg",
+		"publishedAt": "2021-02-13T05:43:00Z",
+		"content": "In case you havent noticed, Bitcoins having a bit of a moment. The cryptocurrencys value reached record heights in recent weeks, youll soon be able to buy a Tesla with it, and, as of Friday, you can … [+1500 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Anthony Ha",
+		"title": "Daily Crunch: Jack Dorsey and Jay Z invest in bitcoin development",
+		"description": "Jack Dorsey and Jay Z create a bitcoin endowment, Datadog acquires a Startup Battlefield company and BuzzFeed experiments with AI-generated quizzes. This is your Daily Crunch for February 12, 2021. Oh, and before we get started: Consider applying to the Early…",
+		"url": "http://techcrunch.com/2021/02/12/daily-crunch-jack-dorsey-and-jay-z-invest-in-bitcoin-development/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2020/07/GettyImages-887657568.jpg?w=600",
+		"publishedAt": "2021-02-12T23:10:51Z",
+		"content": "Jack Dorsey and Jay Z create a bitcoin endowment, Datadog acquires a Startup Battlefield company and BuzzFeed experiments with AI-generated quizzes. This is your Daily Crunch for February 12, 2021.\r\n… [+2805 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "Gizmodo.com"
+		},
+		"author": "Rhett Jones",
+		"title": "Miami May Start Paying City Employees in Bitcoin",
+		"description": "Miami’s mayor, Francis Suarez, is champing at the bit to rebrand his city as a haven for tech entrepreneurs and the tax dollars that come in their wake. His latest branding effort involves a push to make the city offer its municipal workers the option to get …",
+		"url": "https://gizmodo.com/miami-may-start-paying-city-employees-in-bitcoin-1846258140",
+		"urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/yz0ysmubeluo7pxjdw9p.jpg",
+		"publishedAt": "2021-02-12T18:00:00Z",
+		"content": "Miamis mayor, Francis Suarez, is champing at the bit to rebrand his city as a haven for tech entrepreneurs and the tax dollars that come in their wake. His latest branding effort involves a push to m… [+2454 chars]"
+		},
+		{
+		"source": {
+		"id": "mashable",
+		"name": "Mashable"
+		},
+		"author": "Stan Schroeder",
+		"title": "Elon Musk changes Twitter bio to #bitcoin, chaos ensues",
+		"description": "As the man himself said, it was inevitable. \nOn Friday, Tesla CEO Elon Musk changed his Twitter bio to \"#bitcoin.\" This alone perhaps wouldn't be that interesting — after all, Musk expressed his interest in Bitcoin and cryptocurrencies before — but Musk follo…",
+		"url": "https://mashable.com/article/elon-musk-bitcoin-twitter-bio/",
+		"urlToImage": "https://mondrian.mashable.com/2021%252F01%252F29%252F45%252F3c46ae3c616f4ff380595bf659b0a3e7.85f6b.jpg%252F1200x630.jpg?signature=2OKk8uyseXtIBD2VR-eDcdTb8G8=",
+		"publishedAt": "2021-01-29T10:59:39Z",
+		"content": "As the man himself said, it was inevitable. \r\nOn Friday, Tesla CEO Elon Musk changed his Twitter bio to \"#bitcoin.\" This alone perhaps wouldn't be that interesting after all, Musk expressed his inter… [+2792 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "Gizmodo.com"
+		},
+		"author": "Matt Novak",
+		"title": "Biden Pick for Treasury Dept Role Worked as Advisor to Controversial Crypto Company Ripple",
+		"description": "President Joe Biden’s pick to be the new comptroller of the currency at the U.S. Treasury Department, Michael S. Barr, used to be an advisor to the controversial cryptocurrency company Ripple, according to a new report from the Wall Street Journal.Read more...",
+		"url": "https://gizmodo.com/biden-pick-for-treasury-dept-role-worked-as-advisor-to-1846098749",
+		"urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/bpeqqcnsfoj5qbizyfyz.jpg",
+		"publishedAt": "2021-01-21T11:30:00Z",
+		"content": "President Joe Bidens pick to be the new comptroller of the currency at the U.S. Treasury Department, Michael S. Barr, used to be an advisor to the controversial cryptocurrency company Ripple, accordi… [+2949 chars]"
+		},
+		{
+		"source": {
+		"id": null,
+		"name": "New York Times"
+		},
+		"author": "Victoria Shannon and Judith Levitt",
+		"title": "Impeachment Trial, Child Tax Credit, Bitcoin: Your Monday Evening Briefing",
+		"description": "Here’s what you need to know at the end of the day.",
+		"url": "https://www.nytimes.com/2021/02/08/briefing/impeachment-trial-child-tax-credit-bitcoin.html",
+		"urlToImage": "https://static01.nyt.com/images/2021/02/08/us/politics/08new-washington-setup0-eveningbriefing-promo/08new-washington-setup0-facebookJumbo.jpg",
+		"publishedAt": "2021-02-08T23:19:09Z",
+		"content": "6. Alabamas longest-serving senator, Richard Shelby, will retire next year.\r\nMr. Shelby, 86, above, a longtime political powerhouse in his home state, said he would not seek a seventh term, a move th… [+583 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Lucas Matney",
+		"title": "Could meme stocks like GameStop kill bitcoin’s rise?",
+		"description": "Cryptocurrencies, more so than most other things, are only valuable because of a shared agreement that they are valuable. Their value is a product of digital handshakes over millions of transactions firming up that consensus. For bitcoin, the trust that it ha…",
+		"url": "http://techcrunch.com/2021/01/27/could-meme-stocks-like-gamestop-kill-bitcoins-rise/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2017/08/bitcoin-split-2017a.jpg?w=711",
+		"publishedAt": "2021-01-27T19:24:32Z",
+		"content": "Cryptocurrencies, more so than most other things, are only valuable because of a shared agreement that they are valuable. Their value is a product of digital handshakes over millions of transactions … [+3710 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Lucas Matney",
+		"title": "Coinbase is going public via direct listing",
+		"description": "Coinbase plans to go public by way of a direct listing, the company announced in a blog post today. The cryptocurrency exchange was founded in 2012 and allows users to buy and trade decentralized tokens like bitcoin and ethereum. The company has raised over $…",
+		"url": "http://techcrunch.com/2021/01/28/coinbase-is-going-public-via-direct-listing/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2019/01/coinbase.jpg?w=750",
+		"publishedAt": "2021-01-28T19:36:35Z",
+		"content": "Coinbase plans to go public by way of a direct listing, the company announced in a blog post today.\r\nThe cryptocurrency exchange was founded in 2012 and allows users to buy and trade decentralized to… [+1258 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Manish Singh",
+		"title": "India plans to introduce law to ban Bitcoin, other private cryptocurrencies",
+		"description": "India plans to introduce a law to ban private cryptocurrencies such as bitcoin in the country and provide a framework for the creation of an official digital currency during the current budget session of parliament. In the agenda (PDF) published on the lower …",
+		"url": "http://techcrunch.com/2021/01/30/india-plans-to-introduce-law-to-ban-bitcoin-other-private-cryptocurrencies/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2018/09/cryptocurrency.jpg?w=609",
+		"publishedAt": "2021-01-30T11:31:02Z",
+		"content": "India plans to introduce a law to ban private cryptocurrencies such as bitcoin in the country and provide a framework for the creation of an official digital currency during the current budget sessio… [+1858 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Anthony Ha",
+		"title": "Daily Crunch: DoorDash acquires Chowbotics",
+		"description": "DoorDash acquires a salad-making robotics startup, Twitter confirms subscription plans and Tesla makes a big bet on bitcoin. This is your Daily Crunch for February 8, 2021. The big story: DoorDash acquires Chowbotics DoorDash has acquired the Bay Area startup…",
+		"url": "http://techcrunch.com/2021/02/08/daily-crunch-doordash-acquires-chowbotics/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2017/03/chowbotics_team_salads.jpg?w=600",
+		"publishedAt": "2021-02-08T23:27:07Z",
+		"content": "DoorDash acquires a salad-making robotics startup, Twitter confirms subscription plans and Tesla makes a big bet on bitcoin. This is your Daily Crunch for February 8, 2021.\r\nThe big story: DoorDash a… [+3188 chars]"
+		},
+		{
+		"source": {
+		"id": "techcrunch",
+		"name": "TechCrunch"
+		},
+		"author": "Connie Loizos",
+		"title": "Coinbase commits to a “better customer experience” following complaints",
+		"description": "Coinbase has a problem. As interest in bitcoin has soared along with its price, the popular cryptocurrency exchange has found itself the target of a growing spate of angry customers who haven’t been able to access customer service. A quick look at Twitter tel…",
+		"url": "http://techcrunch.com/2021/01/15/coinbase-commits-to-a-better-customer-experience-following-complaints/",
+		"urlToImage": "https://techcrunch.com/wp-content/uploads/2020/07/GettyImages-887657568.jpg?w=600",
+		"publishedAt": "2021-01-15T21:06:19Z",
+		"content": "Coinbase has a problem. As interest in bitcoin has soared along with its price, the popular cryptocurrency exchange has found itself the target of a growing spate of angry customers who haven’t been … [+3566 chars]"
+		}
+	]
+}

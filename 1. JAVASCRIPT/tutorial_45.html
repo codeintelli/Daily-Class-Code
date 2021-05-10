@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    MAPS IN JAVASCRIPT
+    <script>
+      console.log("MAPS IN JAVASCRIPT");
+      const myMap = new Map();
+      console.log(myMap);
+      const key1 = "mystr",
+        key2 = {},
+        key3 = function () {};
+
+      // setting map values
+      myMap.set(key1, "this is a string");
+      myMap.set(key2, "this is a blank object");
+      myMap.set(key3, "this is an empty function");
+      console.log(myMap);
+
+      //   //   getting the value from a map
+      //   let value1 = myMap.get(key2);
+      //   console.log(value1);
+      //   //   getting the size of a map
+      //   console.log(myMap.size);
+
+      //   //   putting loop in maps
+      //   console.log("**************FOR LOOP*********");
+      //   for (let [key, value] of myMap) {
+      //     console.log(key, value);
+      //   }
+
+      //   //   GETTING ONLY KEYS
+      //   for (let key of myMap.keys()) {
+      //     console.log(key);
+      //   }
+      //   //   GETTING ONLY VALUES
+      //   for (let key of myMap.values()) {
+      //     console.log(key);
+      //   }
+      //   using for each loop in map
+      myMap.forEach((key, value) => {
+        console.log(value);
+        console.log(key);
+      });
+    </script>
+  </body>
+</html>

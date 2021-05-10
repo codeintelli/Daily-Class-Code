@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Padauk&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        width: 100%;
+        background-color: #ecf0f1;
+      }
+      .header img {
+        height: 20%;
+        width: 16%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 10px;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li {
+        list-style-type: disc;
+      }
+      ul > li > ul > li {
+        list-style-type: square;
+      }
+      li {
+        margin-left: 40px;
+        padding: 10px;
+        font-family: "Padauk", sans-serif;
+        font-size: 22px;
+        color: #8395a7;
+      }
+      p {
+        margin-left: 40px;
+        padding: 10px;
+        font-family: "Padauk", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #576574;
+      }
+      p a,
+      p span {
+        color: #1dd1a1;
+        font-family: "Poppins", sans-serif;
+      }
+      p span:hover,
+      a:hover {
+        color: #13aa52;
+      }
+      h3 {
+        font-size: 25px;
+        margin-left: 20px;
+      }
+      h1,
+      h3 {
+        text-transform: capitalize;
+        color: #2c3e50;
+        padding: 10px 10px;
+        font-family: "Roboto Mono", monospace;
+      }
+      .container {
+        width: 900px;
+        height: 100%;
+        padding: 50px;
+        word-wrap: break-word;
+      }
+      li:hover,
+      p:hover {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="mongo full.png" alt="logo" />
+    </div>
+    <div class="box">
+      <div class="container">
+        <h1>install mongo</h1>
+        <ul>
+          <li>show mongo installation</li>
+          <li>
+            then data/db concept that you have to create before 4.0 version
+          </li>
+          <li>then run mongo.exe and normal install</li>
+          <li>
+            then understand importance of envir. variable technique
+            (mysql,mongo)
+          </li>
+          <li>then show versions</li>
+          <li>then clear conceptof mongod.exe</li>
+          <li>then run {show dbs}</li>
+        </ul>
+
+        <h1>create database,collection and documents</h1>
+        <ul>
+          <li>{use database_name} database was created</li>
+          <li>run again show dbs</li>
+          <ul>
+            <li>
+              db.collection_name.insertOne({name:"javascript",type:"FrontEnd",videos:50,active:true})
+            </li>
+          </ul>
+          <li>run again show dbs</li>
+          <li>show current active database using only {db}</li>
+          <li>
+            show total collections in current db using only {show collection}
+          </li>
+          <li>
+            insert data
+            db.collection.insertOne({name:"mongodb",type:"Database",videos:10,active:true})
+          </li>
+          <li>to show data from given collection use {db.collection.find()}</li>
+          <li>
+            to show data from given collection use
+            {db.collection.find().pretty()}
+          </li>
+        </ul>
+
+        <h1>CRUD OPERATION</h1>
+        <ul>
+          <h3>Insert Operation</h3>
+          <p>
+            we have two methods to insert data as per
+            <a href="https://docs.mongodb.com/manual/crud/">documentation</a>
+            <br />insertOne({value}) <br />
+            insertMany([{value1},{value2},.....,{value N}])
+          </p>
+          <li>
+            db.collection.insertOne({name:"node",type:"backend",videos:10,active:true})
+          </li>
+          <li>
+            db.collection.insertMany([
+            {name:"mongodb",type:"Database",videos:10,active:true},
+            {name:"React",type:"FrontEnd",videos:10,active:true},
+            {name:"express",type:"FrontEnd",videos:10,active:true},
+            {name:"django",type:"Backend",videos:10,active:true}
+            {name:"Python",type:"Programming",videos:10,active:true}
+            {name:"C",type:"Programming",videos:10,active:true}
+            {name:"C++",type:"Programming",videos:10,active:true}
+            {name:"java",type:"Programming",videos:10,active:true} ])
+          </li>
+          <li>db.collection.find().pretty();</li>
+        </ul>
+
+        <h3>Select Operation</h3>
+        <p>db.collection.find(query,projection)</p>
+        <ul>
+          <li>
+            1. find all the result of the given collection.
+            <ul>
+              <li>db.collection.find()</li>
+            </ul>
+          </li>
+          <li>
+            2. show the reason in pretty format
+            <ul>
+              <li>db.collection.find().pretty()</li>
+            </ul>
+          </li>
+          <li>
+            3. get only mongodb data as a output.
+            <ul>
+              <li>db.collection.find({name:"mongoDB"}).pretty()</li>
+            </ul>
+          </li>
+          <li>
+            4. get only mongodb data as a output with only name field;
+            <ul>
+              <li>db.collection.find({name:"mongoDB"},{name:1}).pretty()</li>
+            </ul>
+          </li>
+          <li>
+            5. get the mongodb data without_id field in it.
+            <ul>
+              <li>
+                db.collection.find({name:"mongoDB"},{_id:0,name:1}).pretty()
+              </li>
+            </ul>
+          </li>
+          <li>
+            6. set the filter to active:true and get only the first field with
+            active true value
+
+            <ul>
+              <li>
+                db.collection.find({active:true},{_id:0,name:1}).pretty().limit(1)
+              </li>
+            </ul>
+          </li>
+          <li>
+            7. do the same as 6 qye but with diff method
+            <ul>
+              <li>db.collection.findOne({active:true})</li>
+            </ul>
+          </li>
+          <li>
+            8. di the same as 6 que but this time get the 2nd field with active
+            true by skipping the 1st field.
+
+            <ul>
+              <li>
+                db.collection.find({active:true},{_id:0,name:1}).pretty().limit(1).skip(1)
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h3>Update Operation</h3>
+        <p>
+          db.collection.updateOne(filter,update) <br />
+          db.collection.updateMany(filter,update)
+        </p>
+        <p class="inst">
+          the <span>$set operator</span> replaces the value of a field with the
+          specific value
+        </p>
+        <ul>
+          <li>
+            1. update the javascript type value to "FUll Stack"
+            <ul>
+              <li>
+                db.collection.updateOne({name:Javascript},{$set:{type:"Full
+                Stack"}})
+              </li>
+            </ul>
+          </li>
+          <li>
+            2. update the true active value to "False"
+            <ul>
+              <li>
+                db.collection.updateMany({active:true},{$set:{active:false}})
+              </li>
+            </ul>
+          </li>
+          <li>
+            3. UPDATE all the fields with the type value to "FRONTEND" and set
+            the value of the status to true
+            <ul>
+              <li>
+                db.collection.updateMany({type:"Front End"},{$set:{type:true}})
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h3>Delete Operation Operation</h3>
+        <p>db.collection.deleteMany({})</p>
+        <ul>
+          <li>
+            1. delete the field with the type matches "FUll Stack"
+            <ul>
+              <li>db.collection.deleteMany({type:"fullstack"})</li>
+            </ul>
+          </li>
+          <li>
+            2. delete Full Table
+            <ul>
+              <li>db.collection.deleteMany({type:"fullstack"})</li>
+            </ul>
+          </li>
+          <p>
+            WE also have the <span>remove()</span> method to perform the delete
+            operation but its deprecated as per
+            <a href="https://docs.mongodb.com/manual/crud/"> documents</a>
+          </p>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

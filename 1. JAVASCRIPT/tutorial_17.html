@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JAVASCRIPT | TUTORIAL</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading" contenteditable="true">Welcome to Code With Harry</h1>
+      <div id="myfirst" class="child red good" id="first">
+        child 1
+
+        <ul class="this">
+          <li class="childul">this</li>
+          <li class="childul">is</li>
+          <li class="childul">a</li>
+          <li class="childul">list</li>
+          <li class="childul">of my dreams</li>
+        </ul>
+      </div>
+      <div class="child">child 2</div>
+      <div class="child red">child 3</div>
+      <div class="child">child 4</div>
+      <form action="none.html" method="post">
+        <a href="//codewithharry.com">Go to Code With Harry</a>
+        <br />
+        <br />
+        Search this website: <input type="text" name="Hello" id="" />
+        <input type="button" id="btn" value="submit" />
+      </form>
+    </div>
+    <br />
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+  </body>
+  <script type="text/javascript">
+    console.log("This is tut 17");
+    let btn = document.getElementById("btn");
+    // btn.addEventListener("click", func1);
+    // btn.addEventListener("mousedown", func3);
+    // btn.addEventListener("dblclick", func2);
+
+    // function func1(e) {
+    //   console.log("Thanks you have clicked once", e);
+    //   e.preventDefault();
+    //   //  the button is stop working
+    // }
+
+    // function func2(e) {
+    //   console.log("Thanks its a double click", e);
+    //   e.preventDefault();
+    // }
+
+    // function func3(e) {
+    //   console.log("Thanks its a mouse down ", e);
+    //   e.preventDefault();
+    // }
+    // document.querySelector(".no").addEventListener("mouseenter", function () {
+    //   console.log("You entered no");
+    // });
+
+    // document.querySelector(".no").addEventListener("mouseleave", function () {
+    //   console.log("You exited no");
+    // });
+
+    document
+      .querySelector(".container")
+      .addEventListener("mousemove", function (e) {
+        console.log(e.offsetX, e.offsetY);
+        document.body.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY},219)`;
+        console.log("You triggered mouse move event");
+      });
+  </script>
+</html>

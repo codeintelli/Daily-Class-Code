@@ -1,0 +1,14 @@
+{
+  "name": "node_project",
+  "version": "1.0.0",
+  "description": "node tutorial first project using api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}

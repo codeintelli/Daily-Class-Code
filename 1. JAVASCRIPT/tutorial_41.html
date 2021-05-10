@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    <h1>DIFFERENCE BETWEEN FOR IN AND FOR OF LOOPS</h1>
+    <script type="text/javascript">
+      console.log("DIFFERENCE BETWEEN FOR IN AND FOR OF LOOPS");
+      // 1. traditional for loop
+      // 2. for in loop
+      // 3. for of loop
+
+      const peoples = [
+        "ANJALI",
+        "KRUPA",
+        "NIMISHA",
+        "KARISHMA",
+        "RINKAL",
+        "AARTI",
+        "bhavisha",
+      ];
+      // printing array using traditional for loop
+      // for (let index = 0; index < peoples.length; index++) {
+      //   const element = peoples[index];
+      //   console.log(element);
+      // }
+
+      // printing array using for in loop
+      // for (let i in peoples) {
+      //   console.log(peoples[i]);
+      // }
+
+      // printing array using for of loop
+      // for (let i of peoples) {
+      //   // console.log(i);
+      // }
+      let obj = { name: "shiva", language: "jaavascript", hobbies: "coading" };
+
+      // console.log(obj);
+
+      // itterating object using traditional for loop
+      // for (let index = 0; index < Object.keys(obj).length; index++) {
+      //   const element = obj[Object.keys(obj)[index]];
+      //   console.log(element);
+      // }
+
+      // itterating object using  for in loop
+      // for (let key in obj) {
+      //   console.log(obj[key]);
+      // }
+
+      // for of loop is only for string,array its not for object
+      // itterating object using for of loop
+      // for (let key of obj) {
+      //   console.log(obj);
+      // }
+
+      let mystring = "this company is best company in this universe";
+      let a = mystring * 5;
+      // for (let char in mystring) {
+      //   console.log(mystring[char]);
+      //   console.log(char);
+      // }
+      // for (let char of mystring) {
+      //   console.log(mystring[char]);
+      // }
+
+      console.log(mystring);
+      console.log(a);
+    </script>
+  </body>
+</html>

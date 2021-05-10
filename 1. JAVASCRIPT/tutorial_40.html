@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX IN JAVASCRIPT</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>AJAX Tutorial</h1>
+    <button type="button" class="btn btn-primary" id="FetchBtn">
+      FetchBtn
+    </button>
+    <button type="button" class="btn btn-primary" id="PopBtn">Populate</button>
+    <div class="container">
+      <h1>employee</h1>
+      <ul id="list"></ul>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      console.log("tutorial on ajax");
+      let fetchBtn = document.getElementById("FetchBtn");
+      fetchBtn.addEventListener("click", btnclicked);
+      function btnclicked() {
+        console.log("you have clicked the button");
+
+        // // initiate an xhr object
+        // /*
+        // xhr.open();
+        // xhr.onload();
+        // xhr.onprogress();
+        // xhr.onreadystatechange();
+        // xhr.send();
+        // */
+
+        // // xhr.open('GET/POST','url/filename',true/false)
+        // // const xhr = new XMLHttpRequest();
+        // // // xhr.open("GET", "itvmh.txt", true);
+        // // // here you can call api
+        // // xhr.open("GET", "https://jsonplaceholder.typicode.com/todos/1", true);
+        // // xhr.onprogress = function () {
+        // //   // spinner or loader
+        // //   console.log("your file is in progress");
+        // // };
+        // // xhr.onload = function () {
+        // //   console.log("your file is loaded");
+        // //   if ((this.status = 200)) {
+        // //     console.log(this.responseText);
+        // //   } else {
+        // //     console.error("some issue from your side");
+        // //   }
+        // // };
+        // // xhr.send();
+
+        const xhr = new XMLHttpRequest();
+
+        xhr.open(
+          "POST",
+          "http://chessmafia.com/php/salon/api/barber/register",
+          true
+        );
+        // xhr.sendResponseHeaders(
+        //   "content-type",
+        //   "application/x-www-form-urlencoded"
+        // );
+        xhr.getResponseHeader("content-type", "application/json");
+        xhr.onprogress = function () {
+          console.log("on progress");
+        };
+        xhr.onload = function () {
+          if (this.status == 200) {
+            console.log(this.responseText);
+          } else {
+            console.log("some error occured");
+          }
+        };
+
+        parameter = `{"first_name":"rahul mardiya","email":"shiava23@gmail.com","password":"shiva@123","phone_number":"2121212121"}`;
+        xhr.send(parameter);
+        console.log("request has successfully send");
+      }
+
+      //   let PopBtn = document.getElementById("PopBtn");
+      //   PopBtn.addEventListener("click", popHandler);
+
+      //   function popHandler() {
+      //     console.log("you have clicked the pop handler");
+      //     const xhr = new XMLHttpRequest();
+      //     // xhr.open("GET/POST", "url/filename", true / false);
+
+      //     xhr.open(
+      //       "GET",
+      //       "http://dummy.restapiexample.com/api/v1/employees",
+      //       false
+      //     );
+      //     xhr.onload = function () {
+      //       console.log("your file is loaded");
+      //       if ((this.status = 200)) {
+      //         let obj = JSON.parse(this.responseText);
+      //         console.log(obj);
+      //         let list = document.querySelector("#list");
+      //         let str = "";
+      //         let data = obj.data;
+      //         console.log(data);
+      //         for (key in data) {
+      //           str += `<li>${data[key].employee_name}</li>`;
+      //         }
+      //         list.innerHTML = str;
+      //         console.log(str);
+      //       } else {
+      //         console.error("some issue from your side");
+      //       }
+      //     };
+      //     xhr.send();
+      //     console.log("we are done fatching");
+      //   }
+    </script>
+  </body>
+</html>

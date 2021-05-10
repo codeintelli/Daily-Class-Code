@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    OBJECT LITERAL CONSTRUCTOR
+    <script>
+      console.log("tutorial 24");
+      /* OOPS featurs in javascript 1. class 2. object 3. inheritence 4. encapculation*/
+      let car = {
+        name: "maruti 800",
+        topSpeed: 89,
+        run: function () {
+          console.log(`car is running`);
+          //   return `car is running`;
+        },
+      };
+      //   console.log(car.run());
+      //   console.log(car);
+
+      /* constructor means a template in which we can create a objects */
+      //   creating a constructor for cars
+      function GeneralCars(givenName, givenSpeed) {
+        this.name = givenName;
+        this.speed = givenSpeed;
+        this.run = function () {
+          console.log(`${this.name} is running `);
+        };
+        this.analysis = function () {
+          return `${this.name} is running at ${
+            this.speed
+          } and it is less then mercedis by ${400 - this.speed}`;
+        };
+      }
+
+      car1 = new GeneralCars("Nissan", 100);
+      car2 = new GeneralCars("Marcides", 400);
+      car3 = new GeneralCars("Honda City", 130);
+      car4 = new GeneralCars("laborgini", 200);
+      console.log(car1, car2, car3, car4);
+    </script>
+  </body>
+</html>

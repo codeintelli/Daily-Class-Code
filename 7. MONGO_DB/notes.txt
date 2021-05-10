@@ -1,0 +1,25 @@
+READ QUERY
+1. find all the result of the given collection.
+
+2. show the reason in pretty format
+3. get only mongodb data as a output.
+4. get only mongodb data as a output with only name field;
+5. get the mongodb data without_id field in it.
+6. set the filter to active:true and get only the first field with active true value
+7. do the same as 6 qye but with diff method
+8. di the same as 6 que but this time get the 2nd field with active true by skipping the 1st field.
+
+
+UPDATE QUERY
+
+updateOne
+updateMany
+
+
+1. update the javascript type value to "Full Stack".
+2. UPDATE all the fields with the type value to "FRONTEND" and set the value of the status to false
+3. put all active to false
+
+DELETE 
+
+1. delete the field with the type matches "FUll Stack"

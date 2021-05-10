@@ -1,0 +1,210 @@
+{
+    "event": "100m",
+    "_id": "60682b23aabf6e3e383f25f4",
+    "ranking": 18,
+    "name": "Mehta Priyank",
+    "dob": "1998-10-23T18:30:00.000Z",
+    "country": "india",
+    "score": 92,
+    "__v": 0
+}
+    {
+        "event": "100m",
+        "_id": "606829c67758241c1885b664",
+        "ranking": 1,
+        "name": "Shiva",
+        "dob": "1998-10-05T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682a66aabf6e3e383f25e4",
+        "ranking": 4,
+        "name": "Mahadev",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682a81aabf6e3e383f25e5",
+        "ranking": 2,
+        "name": "Parvati",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682a8faabf6e3e383f25e6",
+        "ranking": 3,
+        "name": "Ganesha",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682a9daabf6e3e383f25e7",
+        "ranking": 5,
+        "name": "Krishna",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682aafaabf6e3e383f25e8",
+        "ranking": 6,
+        "name": "Radhe",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682ab8aabf6e3e383f25e9",
+        "ranking": 7,
+        "name": "Sankar",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682ac2aabf6e3e383f25ea",
+        "ranking": 8,
+        "name": "Nimisha",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682accaabf6e3e383f25eb",
+        "ranking": 9,
+        "name": "Karishma",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682ad8aabf6e3e383f25ec",
+        "ranking": 10,
+        "name": "Anjali",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682adfaabf6e3e383f25ed",
+        "ranking": 11,
+        "name": "Krupa",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682ae6aabf6e3e383f25ee",
+        "ranking": 12,
+        "name": "Aakash",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682aedaabf6e3e383f25ef",
+        "ranking": 13,
+        "name": "Utsav",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682af6aabf6e3e383f25f0",
+        "ranking": 14,
+        "name": "Rahul",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682b07aabf6e3e383f25f2",
+        "ranking": 16,
+        "name": "Rinkal",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682b14aabf6e3e383f25f3",
+        "ranking": 17,
+        "name": "Dushyant",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682b2baabf6e3e383f25f5",
+        "ranking": 19,
+        "name": "Parth",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682b33aabf6e3e383f25f6",
+        "ranking": 20,
+        "name": "Aarti",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682b3aaabf6e3e383f25f7",
+        "ranking": 21,
+        "name": "Bhavisha",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    },
+    {
+        "event": "100m",
+        "_id": "60682c0e209bdb513c75fcb1",
+        "ranking": 15,
+        "name": "Aashis",
+        "dob": "1998-10-23T18:30:00.000Z",
+        "country": "india",
+        "score": 92,
+        "__v": 0
+    }

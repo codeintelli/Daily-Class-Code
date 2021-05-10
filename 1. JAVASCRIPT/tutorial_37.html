@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Arrow Function in javascript
+    <script>
+      console.log("Arrow function");
+      // creating a regular fucntion
+
+      //   const shiva = function () {
+      //     console.log("this is best person ever");
+      //   };
+
+      const shiva = () => console.log("this is best person ever");
+      print(shiva());
+
+      //   const greet = (name, ending) => "Good Morning" + name + ending;
+
+      const greet = function (name, ending) {
+        return "good morning" + name + ending;
+      };
+
+      //   console.log(greet("   mahadev", "  bye"));
+
+      const greet = (name) => "Good Morning" + name;
+      console.log(greet("  shiva"));
+    </script>
+  </body>
+</html>

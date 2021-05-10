@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+      body {
+        background: #222f3e;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+        height: 70vh;
+        background: #718093;
+        border-radius: 5px;
+        font-family: "dancing-script", cursive;
+        overflow: hidden;
+        color: #797d7f;
+        letter-spacing: 0.5px;
+        display: grid;
+        place-items: center;
+      }
+
+      .inner {
+        position: absolute;
+        height: 100%;
+        width: 80%;
+        opacity: 1;
+        -webkit-transition: 1s;
+        transition: 1s;
+      }
+      .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        height: 70%;
+        bottom: 0%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+      }
+
+      .number::before {
+        content: "";
+        position: absolute;
+        top: -130px;
+        right: -30px;
+        width: 90px;
+        height: 200px;
+        background: #9c88ff;
+        opacity: 0.5;
+        transform: rotate(-45deg);
+        z-index: 1;
+        box-shadow: 0, 0, 0.7rem rgba(0, 0, 0, 0.5);
+      }
+      .number {
+        position: absolute;
+        margin: 0;
+        top: 15px;
+        right: 15px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .number img {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        left: -25px;
+        top: -7px;
+        cursor: pointer;
+        z-index: 99;
+        animation: rot 1s linear;
+      }
+      .number:hover img {
+        animation: rot 1s linear;
+      }
+      @keyframes rot {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      .start-quote {
+        font-size: 80px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        color: #95a5a6;
+        opacity: 0.2;
+      }
+      .quote {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      .author {
+        padding-right: 20px;
+        padding-left: 20px;
+        float: right;
+      }
+
+      .button {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #487eb0;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 16px;
+      }
+      /* p {
+        margin-block-end: 0em; */
+      /* } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <div class="box">
+          <p class="number">
+            <img
+              src="logo (1).png"
+              alt="tweet me"
+              title="TweetMe"
+              id="tweetMe"
+            />
+          </p>
+          <div class="text">
+            <i class="start-quote fas fa-quote-left"></i>
+            <p id="quote" class="quote">quote</p>
+            <p id="author" class="author">author</p>
+          </div>
+
+          <button class="button" id="newQ">New Quotes</button>
+        </div>
+      </div>
+    </div>
+
+   <!--  tweetMe,newQ,quotes,author -->
+
+    <script>
+      console.log("calling twitter api");
+      const quote = document.getElementById("quote");
+      const author = document.getElementById("author");
+      const tweetMe = document.getElementById("tweetMe");
+      const newQ = document.getElementById("newQ");
+      let realData = "";
+      let quoteData = "";
+
+      const getQuote = async () => {
+        const api = "https://type.fit/api/quotes";
+        try {
+          let data = await fetch(api);
+          realData = await data.json();
+        } catch (error) {}
+      };
+      const getNewQuote = () => {
+        let rnum = Math.floor(Math.random() * 200);
+        console.log(rnum);
+        quoteData = realData[rnum];
+        console.log(quoteData);
+        quote.innerText = `${quoteData.text}`;
+        quoteData.author = null
+          ? (author.innerText = `unknown`)
+          : (author.innerText = `${quoteData.author}`);
+      };
+      const tweetNow = () => {
+        let company = "by itvmh";
+        let tweetPost = `https://twitter.com/intent/tweet/?text= ${quoteData.text} ${quoteData.author}-----${company}`;
+        window.open(tweetPost);
+      };
+      getQuote();
+      newQ.addEventListener("click", getNewQuote);
+      tweetMe.addEventListener("click", tweetNow);
+    </script>
+  </body>
+</html>

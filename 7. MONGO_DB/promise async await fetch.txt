@@ -1,0 +1,27 @@
+******promise function******
+
+(xyz.somc,ncsxnw)[if]
+	.then(()=>{})[else if]
+		.then(()=>{})[else if]
+			.then(()=>{})[else if]
+	.catch((e)=>{})[else]
+
+******async await******
+
+async(argu){
+url = ("asdnsainxaslxsaj")
+const api = await res.json(url);
+console.log(api)
+}
+
+******fetch******
+
+fetch("url").then().catch();
+
+
+less than = lt
+grater than = gt
+grater than or equlal to = gte
+
+in array =in
+not in array =nin 

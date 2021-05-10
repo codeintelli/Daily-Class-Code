@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var xhttp = new XMLHttpRequest();
+      // xhttp.open("method","url/file_name","async: true or false ")
+      xhttp.open("GET", "index.json", false);
+
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          //   console.log(xhttp.responseText);
+          var response = JSON.parse(xhttp.responseText);
+          console.log(response);
+          console.log(response.employee);
+          let employee = response.employee;
+
+          let showdata = "";
+          for (var i = 0; i < employee.length; i++) {
+            showdata += "id: " + i + "<br>";
+            showdata += "name: " + employee[i].name + "<br>";
+            showdata += "age: " + employee[i].age + "<br>";
+          }
+          document.write(showdata);
+        }
+      };
+      xhttp.send();
+      console.log("done printing");
+    </script>
+  </body>
+</html>

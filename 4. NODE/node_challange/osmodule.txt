@@ -1,0 +1,38 @@
+architecture:	x64
+ 1.1496772766113281
+
+
+6.957187652587891
+
+
+DESKTOP-LD4BVPN
+
+
+win32
+
+
+Windows_NT
+
+
+C:\Users\dk905
+
+
+C:\Users\dk905\AppData\Local\Temp
+
+
+LE
+
+
+0,0,0
+
+
+10.0.19041
+
+
+40333
+
+
+[{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1445937,"nice":0,"sys":1098640,"idle":10541109,"irq":209296}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1155812,"nice":0,"sys":531812,"idle":11397859,"irq":32500}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1857890,"nice":0,"sys":672000,"idle":10555593,"irq":10781}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1165718,"nice":0,"sys":434843,"idle":11484921,"irq":7000}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1604609,"nice":0,"sys":595812,"idle":10885062,"irq":9656}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1170171,"nice":0,"sys":470609,"idle":11444687,"irq":7156}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1640343,"nice":0,"sys":572406,"idle":10872718,"irq":8640}},{"model":"AMD Ryzen 5 2500U with Radeon Vega Mobile Gfx  ","speed":1996,"times":{"user":1291359,"nice":0,"sys":451250,"idle":11342859,"irq":5531}}]
+
+
+{"VirtualBox Host-Only Network":[{"address":"fe80::4920:f226:b0fa:86ca","netmask":"ffff:ffff:ffff:ffff::","family":"IPv6","mac":"0a:00:27:00:00:11","internal":false,"cidr":"fe80::4920:f226:b0fa:86ca/64","scopeid":17},{"address":"192.168.56.1","netmask":"255.255.255.0","family":"IPv4","mac":"0a:00:27:00:00:11","internal":false,"cidr":"192.168.56.1/24"}],"VirtualBox Host-Only Network #2":[{"address":"fe80::109a:92cb:b04a:95f6","netmask":"ffff:ffff:ffff:ffff::","family":"IPv6","mac":"0a:00:27:00:00:13","internal":false,"cidr":"fe80::109a:92cb:b04a:95f6/64","scopeid":19},{"address":"192.168.119.2","netmask":"255.255.255.0","family":"IPv4","mac":"0a:00:27:00:00:13","internal":false,"cidr":"192.168.119.2/24"}],"Ethernet 4":[{"address":"fe80::6078:6d5e:1738:9622","netmask":"ffff:ffff:ffff:ffff::","family":"IPv6","mac":"0a:00:27:00:00:15","internal":false,"cidr":"fe80::6078:6d5e:1738:9622/64","scopeid":21},{"address":"169.254.150.34","netmask":"255.255.0.0","family":"IPv4","mac":"0a:00:27:00:00:15","internal":false,"cidr":"169.254.150.34/16"}],"Wi-Fi":[{"address":"2402:8100:399b:5472:bdb2:1bbd:e0ea:220b","netmask":"ffff:ffff:ffff:ffff::","family":"IPv6","mac":"4c:eb:bd:4e:3d:7f","internal":false,"cidr":"2402:8100:399b:5472:bdb2:1bbd:e0ea:220b/64","scopeid":0},{"address":"2402:8100:399b:5472:c809:fb78:43b:6a3f","netmask":"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff","family":"IPv6","mac":"4c:eb:bd:4e:3d:7f","internal":false,"cidr":"2402:8100:399b:5472:c809:fb78:43b:6a3f/128","scopeid":0},{"address":"fe80::bdb2:1bbd:e0ea:220b","netmask":"ffff:ffff:ffff:ffff::","family":"IPv6","mac":"4c:eb:bd:4e:3d:7f","internal":false,"cidr":"fe80::bdb2:1bbd:e0ea:220b/64","scopeid":7},{"address":"192.168.43.93","netmask":"255.255.255.0","family":"IPv4","mac":"4c:eb:bd:4e:3d:7f","internal":false,"cidr":"192.168.43.93/24"}],"Loopback Pseudo-Interface 1":[{"address":"::1","netmask":"ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff","family":"IPv6","mac":"00:00:00:00:00:00","internal":true,"cidr":"::1/128","scopeid":0},{"address":"127.0.0.1","netmask":"255.0.0.0","family":"IPv4","mac":"00:00:00:00:00:00","internal":true,"cidr":"127.0.0.1/8"}]}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT TUTORIAL</title>
+  </head>
+  <body>
+    <script>
+      console.log("tuts 3 : array and objects");
+
+      let marks = [34, 23, 24, 93, 73, 25];
+      const fruits = ["Orange", "Apple", "Pineapple"];
+      const mixed = ["str", 89, ["hello", 5]];
+
+      marks.push(49);
+      marks.unshift(4923);
+      marks.pop();
+      marks.shift();
+      const a = marks.splice(2, 3);
+      console.log(marks);
+      marks = marks.concat(a);
+      console.log(marks);
+
+      let myobj = {
+        "first name": "harry",
+        channel: "CodeWithHarry",
+        isActive: true,
+        marks: [1, 5, 3, 6],
+      };
+
+      console.log(myobj);
+      console.log(myobj["channel"]);
+      console.log(myobj.channel);
+
+      //   const arr = new Array(23, 123, 21, "Orange");
+      //   console.log(marks);
+      //   console.log(marks.length);
+      //   console.log(Array.isArray(marks));
+      //   console.log(mixed[2][0]);
+      //   console.log(fruits[1]);
+    </script>
+  </body>
+</html>

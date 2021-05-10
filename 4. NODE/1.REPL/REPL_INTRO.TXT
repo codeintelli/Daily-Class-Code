@@ -1,0 +1,5 @@
+js expressions
+use variables
+multiline code
+use(_) to get last result
+we can use editor mode in REPL

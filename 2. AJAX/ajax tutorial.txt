@@ -1,0 +1,22 @@
+what is ajax?
+
+AJAX: asynchronous javascript and xml 
+
+AJAX is not a programing language 
+ajax just uses a combination of:
+a browser built in xml http request object(to request data from a web server)
+javascript and html  DOM (to display or use the data).
+
+ajax allows web pages to be updated asynchronous by exchanging data with a web server behind the scenes.
+
+//jquery
+the load() method loads data from a server and puts the returned data into the selected element
+$.ajax({})
+
+get and post method
+//post method
+$(selector).load(URL,data,callback);
+using in jquey and load method load the data from the server 
+
+//get method
+$(selector).load(URL,CALLBACK);

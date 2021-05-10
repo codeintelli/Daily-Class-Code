@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    <div class="container" id="childnod">
+      <h1 id="heading">Welcome to Code With Harry</h1>
+      <div class="child red good" id="first">
+        child 1
+
+        <ul class="this" id="myfirst">
+          <li class="childul">this</li>
+          <li class="childul">is</li>
+          <li class="childul">a</li>
+          <li class="childul">list</li>
+          <li class="childul">of my dreams</li>
+        </ul>
+      </div>
+      <div class="child">child 2</div>
+      <div class="child red">child 3</div>
+      <div class="child">child 4</div>
+      <form action="none.html" method="post" title="hello">
+        <a href="//google.com">Go to Code With Harry</a>
+        <br />
+        <br />
+        Search this website:
+        <input type="text" name="Hello" id="" />
+        <input type="button" value="submit" />
+        <input type="checkbox" />Check here
+        <h1>Hello WE Are</h1>
+        <a href="//google.com">Go to Code With Harry</a>
+      </form>
+    </div>
+    <br />
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+
+    <script>
+      console.log("tut 13 element selector");
+
+      /*
+      1. single element selector
+      2. multi element selector 
+       */
+
+      //    1. single element selector
+
+      let element = document.getElementById("myfirst");
+      // let element = document.body.childNodes;
+      // element = element.className;
+      // element = element.childNodes;
+      // element = element.parentNode;
+      //   element = element.parentNode;
+      // element.style.color = "green";
+      // element.innerHTML = "<h1>Hello WOrld</h1>";
+      // element.innerText = "<h1>Hello WOrld</h1>";
+      // console.log(element);
+
+      // multielement selector
+
+      // let elems = document.getElementsByClassName("child");
+      let elems = document.getElementsByTagName("ul");
+      // elems.style.color = "yellow";
+      Array.from(elems).forEach(function (e) {
+        e.style.color = "green";
+      });
+      console.log(elems);
+
+      let sel = document.querySelector("#myfirst");
+      sel = document.querySelectorAll(".child");
+      sel = document.querySelectorAll("div");
+      // sel = document.querySelector(".container");
+      // Array.from(sel).forEach(function (e) {
+      //   e.style.color = "green";
+      // });
+      for (let index = 0; index < sel.length; index++) {
+        const element = sel[index];
+        console.log(element);
+        element.style.color = "blue";
+      }
+
+      // sel.style.color = "purple";
+    </script>
+  </body>
+</html>

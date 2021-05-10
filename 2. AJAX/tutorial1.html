@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX TUTORIAL</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	.btn-success{
+    		background-color: #000 !important;
+    		color: #fff !important;;
+    	}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="loaddata">
+        <h2>This session is going to awesome learing</h2>
+      </div>
+      <button class="btn btn-success" id="btnclick">Click Button</button>
+    </div>
+
+    <script>
+      // jyare mru document ready thai ne tyare mare aa function ne run karvu 6e
+      $(document).ready(function () {
+        $("#btnclick").click(function () {
+          // callback function:- the function  call inside any function is know as callback function
+          $("#loaddata").load("tut1_filename.html", function () {
+            // alert("your data is successfully loaded");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

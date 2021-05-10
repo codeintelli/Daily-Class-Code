@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("30:ES6 Classes and Inheritence");
+      class Employee {
+        constructor(givenName, salary, experience) {
+          this.name = givenName;
+          this.salary = salary;
+          this.experience = experience;
+        }
+        slogan() {
+          return `I am ${this.name} and this company is best`;
+        }
+        joiningYear() {
+          return 2021 - this.experience;
+        }
+        // static method
+        // if you are creating any static method then the declared variables,method,constructor,object or function will not be used in this static method
+        static add(a, b) {
+          return a + b;
+        }
+      }
+      //   Date()
+      let shiva = new Employee("shiva", 24232, 32);
+      console.log(shiva);
+      console.log(Employee.add(23, 42));
+      //   console.log(shiva.slogan());
+      //   console.log(shiva.joiningYear());
+
+      class Programmer extends Employee {
+        constructor(givenName, salary, experience, language, gitlab) {
+          super(givenName, salary, experience);
+          this.language = language;
+          this.gitlab = gitlab;
+        }
+        favouriteLang() {
+          if (this.language == "python") {
+            return "python";
+          } else {
+            return "javascript";
+          }
+        }
+      }
+      let sankar = new Programmer("Nimisha", 4214234, 12, "go", true);
+      console.log(sankar);
+      console.log(sankar.favouriteLang());
+      console.log(sankar.slogan());
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+
+[
+    {
+       "name":"dushyant",
+       "company":"itvmh",
+       "age":22,
+       "gender":"male"
+
+},
+
+    {
+    
+        "name":"aakash",
+        "company":"itvmh",
+        "age":22,
+        "gender":"male"
+    },
+        
+    {
+        "name":"rahul",
+        "company":"itvmh",
+        "age":22,
+        "gender":"male"
+    },
+
+{"name":"krupa","age":22,"collage":"gmca"}]

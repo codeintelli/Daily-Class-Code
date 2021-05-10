@@ -1,0 +1,5 @@
+1. require 
+2. connect database{mongo.connect(url).then().catch()}
+3. creating schema
+{const var_nm = new mongo.schema({structure});}
+4. create model/collection/table(in mysql lang){const var_name = (coll_name,schema_nm)}

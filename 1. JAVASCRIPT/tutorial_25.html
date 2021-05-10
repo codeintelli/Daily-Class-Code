@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>object and prototyped</h1>
+    <script>
+      console.log("tutorial 25");
+      // object literal:object.prototype
+      let obj = {
+        name: "shiva",
+        company: "itvmh",
+        address: "amd",
+      };
+      //   creating a new object using constructor
+
+      function Obj(givenName) {
+        this.givenName = givenName;
+      }
+
+      let obj2 = new Obj("Harry/Shiva");
+
+      //   console.log(obj2);
+      //   constructor
+      function Student(name) {
+        this.name = name;
+      }
+
+      //   prototype
+      Student.prototype.getName = function () {
+        return this.name;
+      };
+      Student.prototype.setName = function () {
+        this.name = name;
+      };
+      let std = new Student("shiva", "male");
+      //   std.toString();
+      let std2 = new Student("shiva");
+      console.log(std2);
+
+      // Object.prototype.setName = function () {
+      //   console.log("shiva");
+      // };
+    </script>
+  </body>
+</html>

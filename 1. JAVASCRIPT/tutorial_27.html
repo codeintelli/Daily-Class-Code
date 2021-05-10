@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("27: Prototype Inheritence In Javascript");
+      // object literal
+      //   1. (template/blueprint)you can create object like this
+      // const proto = {
+      //   slogan: function () {
+      //     return `this company is best`;
+      //   },
+      //   changeName: function (newName) {
+      //     this.name = newName;
+      //   },
+      // };
+      // console.log(proto);
+      // //  2. (object creation) you can create object also like this
+      // let shiva = Object.create(proto);
+      // shiva.name = "shiv";
+      // shiva.role = "programmer";
+
+      // shiva.changeName("aakash");
+
+      // console.log(shiva);
+      // console.log(shiva.slogan());
+
+      // //  3. (object creation) you can create object also like this
+      // let mahadev = Object.create(proto, {
+      //   //   if you are using this syntax then if you want to change any value then you must use writable becomes true
+      //   name: { value: "mahadev", writable: true },
+      //   role: { value: "programmer" },
+      // });
+
+      // mahadev.changeName("nimisha");
+      // mahadev.slogan();
+      // console.log(mahadev);
+      // console.log(mahadev.slogan());
+
+      // Employee Constructor
+      function Employee(givenName, salary, experience) {
+        this.name = givenName;
+        this.salary = salary;
+        this.experience = experience;
+      }
+
+      // slogan
+      Employee.prototype.slogan = function () {
+        return `this company is best, Regards with ${this.name}`;
+      };
+
+      // create an object from this constructor now
+      let shivaObj = new Employee("Shiva", 24232, 32);
+      console.log(shivaObj);
+      //   console.log(shivaObj.slogan());
+
+      //   now we are using inheritence
+      function Programmer(givenName, salary, experience, language) {
+        // inheritence working using call keyword
+        Employee.call(this, givenName, salary, experience);
+        this.language = language;
+      }
+
+      // inherit the prototype
+      Programmer.prototype = Object.create(Employee.prototype);
+
+      //   setting constructor manually
+      Programmer.prototype.constructor = Programmer;
+      let sankar = new Programmer("sankar", 214123, 23, "python");
+
+      console.log(sankar);
+    </script>
+  </body>
+</html>

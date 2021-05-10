@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Generator in javascript</h1>
+    <script>
+      console.log("Generator in javascript");
+      //   generator is one type of array
+      //   1 - 1B value store
+      // so what should we prefer
+      //   generator is one type of array as well as function with multiple return type know as yield
+
+      //   generator syntax
+      function* numberGen() {
+        // initialize a value in generator
+        let i = 0;
+        // using yield keyword
+        // yield 1;
+        // yield 2;
+        // yield 3;
+        // yield 4;
+        while (true) {
+          //   yield (i++).toString();
+          yield i++;
+        }
+      }
+
+      //   calling a generator
+      const gen = numberGen();
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+      console.log(gen.next().value);
+    </script>
+  </body>
+</html>

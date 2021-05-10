@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading" contenteditable="true">Welcome to Code With Harry</h1>
+      <div id="myfirst" class="child red good">
+        child 1
+
+        <ul class="this">
+          <li class="childul">this</li>
+          <li class="childul">is</li>
+          <li class="childul">a</li>
+          <li class="childul">list</li>
+          <li class="childul">of my dreams</li>
+        </ul>
+      </div>
+      <div class="child">child 2</div>
+      <div class="child red">child 3</div>
+      <div class="child">child 4</div>
+      <form action="none.html" method="post">
+        <a href="//codewithharry.com">Go to Code With Harry</a>
+        <br />
+        <br />
+        Search this website: <input type="text" name="Hello" id="" />
+        <input type="button" id="btn" value="submit" />
+      </form>
+    </div>
+    <br />
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+    <script>
+      console.log("EDitable div");
+      let element = document.createElement("div");
+      let val = localStorage.getItem("text");
+      let text;
+      if (val == null) {
+        text = document.createTextNode(
+          "this is my element which is created using javascript if you want to edit it then you can do it."
+        );
+      } else {
+        text = document.createTextNode(val);
+      }
+      element.appendChild(text);
+
+      element.setAttribute("id", "elem");
+      element.setAttribute("class", "elem");
+      element.setAttribute(
+        "style",
+        "border:3px solid #000; width:180px;margin:34px;padding:23px;"
+      );
+      //   console.log(element);
+      // grab the main container
+      let container = document.querySelector(".container");
+      let first = document.querySelector("#myfirst");
+      container.insertBefore(element, first);
+
+      element.addEventListener("click", function () {
+        let noTextArea = document.getElementsByClassName("textarea").length;
+        if (noTextArea == 0) {
+          let html = elem.innerHTML;
+          element.innerHTML = `<textarea class="textarea form-control" id="textarea" rows=3>${html}</textarea>`;
+        }
+
+        let textarea = document.getElementById("textarea");
+        textarea.addEventListener("blur", function () {
+          elem.innerHTML = textarea.value;
+          localStorage.setItem("text", textarea.value);
+        });
+      });
+    </script>
+  </body>
+</html>

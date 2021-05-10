@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log("JSON IN ONE VIDEO");
+      //   create or insert
+      var jsonobj = {
+        Firstname: "Dushyant",
+        Lastname: "khoda",
+        age: 22,
+        profession: "webdeveloper",
+      };
+      //   document.write(jsonobj.Firstname);
+      //   document.write(jsonobj.Lastname);
+      //   document.write(jsonobj.Firstname);
+      //   document.write(jsonobj[Firstname]);
+
+      //   read or select
+      for (showdata in jsonobj) {
+        // document.write(showdata + "<br>");
+        document.write(jsonobj[showdata] + "<br>");
+      }
+
+      //   updata or modify the values
+      jsonobj.Firstname = "Aakash";
+      jsonobj.Lastname = "Patel";
+      //   document.write(jsonobj.Firstname);
+      //   document.write(jsonobj.Lastname);
+
+      //   delete array value
+      delete jsonobj.age;
+      for (showdata in jsonobj) {
+        // document.write(showdata + "<br>");
+        document.write(jsonobj[showdata] + "<br>");
+      }
+      var jsonarray = {
+        array: ["dushyant", "j", "khoda"],
+      };
+      console.log(jsonarray.array);
+
+      //   long creating array values
+
+      var jsonlong = {
+        FIFA: [
+          {
+            countryname: "Brazil",
+          },
+          {
+            countryname: "Portugal",
+          },
+          {
+            countryname: "India",
+          },
+        ],
+      };
+
+      document.write(jsonlong.FIFA[2].countryname);
+    </script>
+  </body>
+</html>

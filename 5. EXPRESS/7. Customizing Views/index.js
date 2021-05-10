@@ -1,0 +1,62 @@
+const express = require("express");
+const app = express();
+const path = require("path");
+const port = 6464;
+
+const absolute_path = path.join(__dirname, "./public");
+const dynamicPath = path.join(__dirname, "./dynamic");
+
+// ! setting template engine hbs
+app.set("view engine", "hbs");
+app.set("views", dynamicPath);
+app.use(express.static(absolute_path));
+
+app.get("/", (req, res) => {
+  res.render("index", {
+    FIRST_LOGO_NAME: "IT",
+    ILLUSTRATOR_IMAGE: "shop.svg",
+    SECOND_LOGO_NAME: "VMH",
+    SEASON_SALE: "WI",
+    SEASON_SALE_DARK: "NT",
+    SEASON_SALE_REMAINING: "ER",
+  });
+});
+
+app.get("/", (client, server) => {
+  server.send("welcome to the templeate engine tutorial");
+});
+
+app.get("/about", (req, res) => {
+  res.render("about", {
+    FIRST_LOGO_NAME: "IT",
+    ILLUSTRATOR_IMAGE: "undraw_online_shopping_ga73.svg",
+    SECOND_LOGO_NAME: "VMH",
+    SEASON_SALE: "welcome to",
+    SEASON_SALE_DARK: "About Us",
+    SEASON_SALE_REMAINING: "Page",
+  });
+});
+
+app.get("/feedback", (req, res) => {
+  res.render("about", {
+    FIRST_LOGO_NAME: "IT",
+    ILLUSTRATOR_IMAGE: "feedback.svg",
+    SECOND_LOGO_NAME: "VMH",
+    SEASON_SALE: "welcome to ",
+    SEASON_SALE_DARK: " Feedback ",
+    SEASON_SALE_REMAINING: "Page",
+  });
+});
+
+app.get("/*", (req, res) => {
+  res.render("about", {
+    FIRST_LOGO_NAME: "IT",
+    ILLUSTRATOR_IMAGE: "404 Error.svg",
+    SECOND_LOGO_NAME: "VMH",
+    SEASON_SALE: " sorry users ",
+    SEASON_SALE_DARK: " 404 ERROR ",
+    SEASON_SALE_REMAINING: "Page",
+  });
+});
+
+app.listen(6464);

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="childnod">
+      <h1 id="heading">Welcome to Code With Harry</h1>
+      <div class="child red good" id="first">
+        child 1
+        <!-- hello we are using comment -->
+        <ul class="this" id="myfirst">
+          <li class="childul">this</li>
+          <li class="childul">is</li>
+          <li class="childul">a</li>
+          <li class="childul">list</li>
+          <li class="childul">of my dreams</li>
+        </ul>
+      </div>
+      <div class="child">child 2</div>
+      <div class="child red">child 3</div>
+      <div class="child">child 4</div>
+      <form action="none.html" method="post" title="hello">
+        <a href="//google.com">Go to Code With Harry</a>
+        <br />
+        <br />
+        Search this website:
+        <input type="text" name="Hello" id="" />
+        <input type="button" value="submit" />
+        <input type="checkbox" />Check here
+        <h1>Hello WE Are</h1>
+        <a href="//google.com">Go to Code With Harry</a>
+      </form>
+    </div>
+    <br />
+    <div class="no">this is a dummy div1</div>
+    <div class="no">this is a dummy div2</div>
+    <div class="no">this is a dummy div3</div>
+    <script>
+      console.log("this is tutorial 14");
+      //   let cont = document.querySelector(".no");
+      //   cont = document.querySelector(".container");
+      //   cont = document.querySelector("#myfirst");
+
+      //   let nodeName = cont.childNodes[1].nodeName;
+      //   nodeName = cont.childNodes[3].nodeType;
+
+      //   //   console.log(cont);
+      //   console.log(nodeName);
+
+      let container = document.querySelector("div.container");
+
+      //   console.log(container.children[1].children[0].children);
+
+      //   console.log(container.firstChild);
+      //   console.log(container.firstElementChild);
+
+      //   console.log(container.lastChild);
+      //   console.log(container.lastElementChild);
+      //   console.log(container.children);
+      //   console.log(container.childElementCount); // Count of child elements
+
+      //   console.log(container.firstElementChild.parentNode);
+      console.log(container.firstElementChild.nextSibling);
+      console.log(container.firstElementChild.nextElementSibling);
+      console.log(
+        container.firstElementChild.nextElementSibling.nextElementSibling
+      );
+    </script>
+  </body>
+</html>
