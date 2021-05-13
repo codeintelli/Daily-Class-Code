@@ -16,7 +16,10 @@ mongo
 const dataSchema = new mongo.Schema({
   name: {
     type: String,
-    require: true,
+    require: [true, "please fill the data successfully"],
+    unique: true,
+    lowercase: true,
+    default: "unknown",
   },
   ctype: String,
   videos: Number,

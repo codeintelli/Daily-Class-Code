@@ -1,0 +1,8 @@
+? suppose we are creating a project on 100 meter race and we have to create that api 
+todo field:- ranking,name,dob,country,score,event
+
+[ ] INSERT MEN REGISTRAION RECORD IN EVENT RECORD/TABLE 
+[ ] GET ALL EVENT RECORD FROM THE RECORD/TABLE
+[ ] GET SPECIFIC MEN RECORD FROM THE RECORD/TABLE
+[ ] GET MEN DETAILS FROM THE RECORD/TABLE AND UPDATE IT
+[ ] REMOVE SPECIFIC MEN FROM THE RECORD/TABLE
