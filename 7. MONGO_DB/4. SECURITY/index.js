@@ -20,6 +20,7 @@ const securePassword = async (password) => {
   const paswordnormal = await bcrypt.compare("shiv6464", paswordHash);
   console.log(paswordnormal);
   const paswordHash = await bcrypt.hash(password, 6);
+  
 };
 
 securePassword("shiv@6464");
