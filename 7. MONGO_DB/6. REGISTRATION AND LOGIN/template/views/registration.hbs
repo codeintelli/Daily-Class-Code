@@ -6,6 +6,8 @@
       <div class="col-lg-6">
         <div class="card2 card border-0 px-4 py-5">
           <div class="mt-2">
+            <form method="POST" action="/register" id="register">
+          
             <div class="row px-3">
               <label class="mb-1">
                 <h6 class="mb-0 text-sm">Name</h6>
@@ -13,7 +15,8 @@
               <input
                 class="mb-4"
                 type="text"
-                name="name"
+                name="fullname"
+               
                 placeholder="Enter a valid Name address"
               />
             </div>
@@ -26,6 +29,7 @@
                 class="mb-4"
                 type="email"
                 name="email"
+                
                 placeholder="Enter a valid Email address"
               />
             </div>
@@ -36,8 +40,9 @@
               </label>
               <input
                 class="mb-4"
-                type="number"
+                type="text"
                 name="phone"
+               
                 placeholder="Enter a valid Phone address"
               />
             </div>
@@ -50,6 +55,7 @@
                 class="mb-4"
                 type="password"
                 name="password"
+               
                 placeholder="Enter a valid Password address"
               />
             </div>
@@ -62,6 +68,7 @@
                 class="mb-4"
                 type="text"
                 name="collage"
+                
                 placeholder="Enter a valid Collage address"
               />
             </div>
@@ -74,6 +81,7 @@
                 class="mb-4"
                 type="text"
                 name="erNo"
+                
                 placeholder="Enter a valid Enrollment Number address"
               />
             </div>
@@ -86,22 +94,25 @@
                 class="mb-4"
                 type="text"
                 name="sem"
+                
                 placeholder="Enter a valid Semester address"
               />
             </div>
 
             <div class="row mb-3 mt-3 px-3">
-              <button type="submit" class="btn btn-blue text-center">
-                Register
-              </button>
+              <input type="submit" value="Register" class="btn btn-blue text-center">
+                
+              </input>
             </div>
             <div class="row mb-4 px-3">
               <small class="font-weight-bold"
                 >Don't have an account?
-                <a href="/success" class="text-danger">Login</a></small
+                <a href="/login" class="text-danger">Login</a></small
               >
             </div>
+          </form>
           </div>
+
         </div>
       </div>
 
