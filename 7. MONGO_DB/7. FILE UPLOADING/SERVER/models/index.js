@@ -15,5 +15,5 @@ const uploadSchema = new mongoose.Schema({
   },
 });
 
-const uploadSchema = new mongoose.model('sharing-data',uploadSchema);
-module.exports = uploadSchema;
+const uploadModel = new mongoose.model("sharing-data", uploadSchema);
+module.exports = uploadModel;
