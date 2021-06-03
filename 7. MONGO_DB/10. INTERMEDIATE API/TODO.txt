@@ -58,4 +58,3 @@ ALL ROUTER WILL BE CALL FROM HERE
 
 1. Cannot use import statement outside a module
     solution:- restart the server once
-

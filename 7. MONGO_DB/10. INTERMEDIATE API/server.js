@@ -1,10 +1,19 @@
-// let express = require("express");
+// $$ import all modules here
 import express from "express";
-let app = express();
-import { EXPRESS_PORT, MONGODB_CONNNECTION } from "./config";
-import RoutesPath from "./routes";
-app.use("/api", RoutesPath);
+const app = express();
+import { APP_PORT } from "./config";
+import Routes from "./Routes";
+import errorHandler from "./middleware/errorHandler";
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.listen(EXPRESS_PORT, () => {
-  console.log(`http://localhost:${EXPRESS_PORT}`);
+// $$ create route here
+app.use("/api", Routes);
+
+// $$ tell express to use json in our file
+app.use(errorHandler);
+// $$ tell express dont use urlencoded
+
+app.listen(APP_PORT, () => {
+  console.log(`http://localhost:${APP_PORT}`);
 });

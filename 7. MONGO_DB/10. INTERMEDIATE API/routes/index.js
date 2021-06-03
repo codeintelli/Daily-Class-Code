@@ -1,7 +1,5 @@
 import express from "express";
 const routes = express.Router();
-import { registerController } from "../controller";
-// here we are using next for error handling
+import registerController from "../controller/registerController";
 routes.post("/register", registerController.register);
-
 export default routes;
