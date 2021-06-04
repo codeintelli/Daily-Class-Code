@@ -1,11 +1,12 @@
 // $$ import all modules here
 import express from "express";
 const app = express();
-import { APP_PORT } from "./config";
+import { APP_PORT, MONGO_CONNECTION_URL } from "./config";
 import Routes from "./Routes";
 import errorHandler from "./middleware/errorHandler";
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+require("./database/connection");
 
 // $$ create route here
 app.use("/api", Routes);
