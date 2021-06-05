@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 
+// database validations
 const userSchema = new mongoose.Schema(
   {
     name: {

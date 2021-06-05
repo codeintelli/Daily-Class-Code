@@ -1,4 +1,4 @@
 import dotenv from "dotenv";
 dotenv.config({ path: "./variable.env" });
 
-export const { APP_PORT, MONGO_CONNECTION_URL, DEBUG_MODE } = process.env;
+export const { APP_PORT, MONGO_CONNECTION_URL, DEBUG_MODE, JWT_SECURE } = process.env;

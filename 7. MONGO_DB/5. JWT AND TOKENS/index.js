@@ -5,7 +5,7 @@ const createToken = async () => {
   // jwt.sign generate the token
   console.log(process.env.SECRET_KEY);
   const token = await jwt.sign(
-    { _id: "shiva_mahadev" },
+    { name: "shiva_mahadev" },
     process.env.SECRET_KEY
   );
   console.log(token);

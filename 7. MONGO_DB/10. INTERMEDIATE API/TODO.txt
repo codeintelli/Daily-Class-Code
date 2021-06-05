@@ -1,6 +1,6 @@
-[ ] Register a user {POST}
-[ ] Login a user {FIND}
-[ ] Who am I {ACCESS TOKEN GENERATE WHO I AM}
+[ + ] Register a user {POST}
+[ + ] Login a user {FIND}
+[ + ] Who am I {ACCESS TOKEN GENERATE WHO I AM}
 [ ] Refresh the token { REFRESH TOKEN }
 [ ] Logout the user{TOKEN GENERATE AND DELETE}
 
@@ -58,3 +58,8 @@ ALL ROUTER WILL BE CALL FROM HERE
 
 1. Cannot use import statement outside a module
     solution:- restart the server once
+
+
+2. Must call super constructor in derived class before accessing 'this' or returning from derived constructor.
+
+solution:- put super() in constructor of customErrorHandler before this keyword

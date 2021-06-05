@@ -2,17 +2,19 @@ import Joi from "joi";
 import CustomErrorHandler from "../../services/CustomErrorHandler";
 import { User } from "../../model";
 import bcrypt from "bcrypt";
+import JwtService from "../../services/JwtService";
 const registerController = {
   async register(req, res, next) {
     // checklist for request
-    //[ + ] VALIDATE THE REQUEST
-    //[ + ] AUTHORIZE THE REQUEST
-    //[ + ] CHECK IF USER IS IN THE DATABASE OR NOT
+    //$$ VALIDATE THE REQUEST
+    //$$ AUTHORIZE THE REQUEST
+    //$$ CHECK IF USER IS IN THE DATABASE OR NOT
     //[] PREPARE A MODEL
     //[] STORE IN DATABASE
     //[] GENERATE THE JWT TOKEN
     //[] SEND RESPONSE
 
+    // backend validation
     const validateRegister = Joi.object({
       name: Joi.string().required().min(3).max(30).messages({
         "string.base": "name should be a type text",
@@ -50,14 +52,20 @@ const registerController = {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     // prepare the model
     const { name, email, password } = req.body;
-    const user = { name, email, password: hashedPassword };
+    const user = new User({ name, email, password: hashedPassword });
+    let result, accesstoken;
     try {
-      const result = await User.save();
+      result = await user.save();
+      // token
+      accesstoken = JwtService.sign({
+        _id: result._id,
+        role: result.role,
+      });
     } catch (err) {
       return next(err);
     }
 
-    res.status(200).send("data varified");
+    res.status(200).send({ data: result, token: accesstoken });
   },
 };
 export default registerController;
