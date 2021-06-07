@@ -5,6 +5,9 @@
 [ ] Logout the user{TOKEN GENERATE AND DELETE}
 
 [ ] Add new product {IF USER IS ADMIN THEN THEY CAN DO THIS TASK}
+
+
+
 [ ] Update a product {IF USER IS ADMIN THEN THEY CAN DO THIS TASK}
 [ ] Get all products 
 [ ] Get single product 
