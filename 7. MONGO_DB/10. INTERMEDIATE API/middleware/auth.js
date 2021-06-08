@@ -13,12 +13,11 @@ const auth = async (req, res, next) => {
   try {
     const { _id, role } = await JwtService.verify(token);
     const user = {
-      _id,
+     _id, 
       role,
     };
     req.user = user;
     next();
-    console.log("data");
   } catch (err) {
     return next(err);
   }

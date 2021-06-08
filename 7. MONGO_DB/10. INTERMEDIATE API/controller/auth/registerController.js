@@ -28,6 +28,7 @@ const registerController = {
         .required()
         .pattern(new RegExp("^[a-zA-Z0-9]{3,30}$")),
       repeatPassword: Joi.ref("password"),
+      role: Joi.string(),
     });
 
     console.log(req.body);
@@ -52,8 +53,8 @@ const registerController = {
 
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
     // prepare the model
-    const { name, email, password } = req.body;
-    const user = new User({ name, email, password: hashedPassword });
+    const { name, email, password, role } = req.body;
+    const user = new User({ name, email, password: hashedPassword, role });
     let result, accesstoken, refresh_token;
     try {
       result = await user.save();

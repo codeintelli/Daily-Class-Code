@@ -6,10 +6,14 @@ import Routes from "./Routes";
 import errorHandler from "./middleware/errorHandler";
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-require("./database/connection");
+import path from "path";
+import "./database/connection";
 
 // $$ create route here
 app.use("/api", Routes);
+app.use("/uploads", express.static("uploads"));
+
+global.appRoot = path.resolve(__dirname);
 
 // $$ tell express to use json in our file
 app.use(errorHandler);

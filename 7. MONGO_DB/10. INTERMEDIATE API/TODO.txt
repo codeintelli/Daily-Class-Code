@@ -1,13 +1,10 @@
 [ + ] Register a user {POST}
 [ + ] Login a user {FIND}
 [ + ] Who am I {ACCESS TOKEN GENERATE WHO I AM}
-[ ] Refresh the token { REFRESH TOKEN }
-[ ] Logout the user{TOKEN GENERATE AND DELETE}
+[ + ] Refresh the token { REFRESH TOKEN }
+[ + ] Logout the user{TOKEN GENERATE AND DELETE}
 
 [ ] Add new product {IF USER IS ADMIN THEN THEY CAN DO THIS TASK}
-
-
-
 [ ] Update a product {IF USER IS ADMIN THEN THEY CAN DO THIS TASK}
 [ ] Get all products 
 [ ] Get single product 

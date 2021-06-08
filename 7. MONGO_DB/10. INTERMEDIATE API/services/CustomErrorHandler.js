@@ -18,5 +18,8 @@ class CustomErrorHandler extends Error {
   static UserNotFound(message = "User Not Found") {
     return new CustomErrorHandler(404, message);
   }
+  static ServerError(message = "Internal server error") {
+    return new CustomErrorHandler(500, message);
+  }
 }
 export default CustomErrorHandler;
