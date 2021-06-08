@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 90%;
+        margin: 50px auto;
+        /* border: 1px solid #000; */
+        color: white;
+        display: grid;
+        grid-template-rows: 60px 100px 200px 60px;
+        grid-template-columns: repeat(3, 1fr) 100px;
+        grid-gap: 10px;
+      }
+      .header {
+        background-color: aquamarine;
+         grid-column-start: 1; 
+         grid-column-end: 5; 
+       /* grid-column: 1/-1;*/
+      }
+      .card1 {
+        background-color: blueviolet;
+      }
+      .card2 {
+        background-color: blueviolet;
+      }
+      .card3 {
+        background-color: blueviolet;
+      }
+      .sidebar {
+        background-color: darkslategrey;
+        grid-row: 2/4;
+        grid-column: 4/5;
+      }
+      .main-content {
+        background-color: violet;
+        grid-column: 1/4;
+      }
+      .footer {
+        background-color: orange;
+        grid-column: 1/-1;
+      }
+    </style>
+    <title>Templates</title>
+
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="header">header</div>
+      <div class="card1">card section</div>
+      <div class="card2">card section</div>
+      <div class="card3">card section</div>
+      <div class="sidebar">sidebar</div>
+      <div class="main-content">main content</div>
+      <div class="footer">footer</div>
+    </main>
+  </body>
+</html>

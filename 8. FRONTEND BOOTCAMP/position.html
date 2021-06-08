@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* in css we have 5 types of position
+      1. relative
+      2. absolute
+      3. static(Default)
+      4. fixed
+      5. sticky
+       */
+    .container {
+      border: 2px solid #000;
+      width: 100%;
+      height: 2222px;
+    }
+
+    .box {
+      display: inline-block;
+      /* in inline block we cant put height or width */
+      height: 100px;
+      width: 100px;
+      border: 2px solid #000;
+      margin: 3px;
+    }
+    #box2 {
+      position: fixed;
+      /* relative to its normal position */
+      /* if we want to use gap between  our block then we are using relative or if dont want gap then we are using absolute */
+
+      right: 34px;
+      bottom: 34px;
+    }
+
+    #box3 {
+      position: sticky;
+      top: 5px;
+    }
+    img {
+      width: 100px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">b1</div>
+      <div class="box" id="box2">
+        <img
+          src="https://www.pixsy.com/wp-content/uploads/2021/04/ben-sweet-2LowviVHZ-E-unsplash-1.jpeg"
+          alt=""
+        />
+      </div>
+      <div class="box" id="box3">b3</div>
+      <div class="box" id="box4">b4</div>
+    </div>
+  </body>
+</html>
