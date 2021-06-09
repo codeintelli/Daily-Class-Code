@@ -1,0 +1,96 @@
+<!-- 
+
+* stands for flexible box
+* aims at providing an efficient and easy way to align items in a container
+* it is direction agnostic
+ flex direction is default horizontal 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Tutorial</title>
+    <style>
+      .container {
+        display: flex;
+        border: 2px solid #000;
+        height: 45vh;
+        /* flex-direction: column-reverse; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: row; [default direction]*/
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+        flex-flow: row wrap;
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: space-around; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        /* align-items: flex-end; */
+      }
+      .fitem {
+        background-color: #9b59b6;
+        font-size: 32px;
+        color: #fff;
+        /* border: 2px solid #000; */
+        padding: 12px;
+        margin: 12px;
+        height: 122px;
+        width: 122px;
+        /* font-size: 42px; */
+      }
+      .item1 {
+        order: 2;
+        flex-grow: 2;
+        animation: blink 2s infinite;
+        animation-delay: 1s;
+      }
+      .item2 {
+        order: 1;
+        flex-grow: 1;
+        animation: blink 2s infinite;
+        animation-delay: 1s;
+      }
+      .item3 {
+        order: 3;
+        flex-grow: 1;
+        align-self: flex-end;
+        animation: blink 2s infinite;
+      }
+      .item4 {
+        order: 1;
+        flex-grow: 1;
+        align-self: flex-end;
+        opacity: 0.3;
+        animation: blink 2s infinite;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.4;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="fitem item1">1</div>
+      <div class="fitem item2">2</div>
+      <div class="fitem item3">3</div>
+      <div class="fitem item4">4</div>
+    </div>
+  </body>
+</html>
