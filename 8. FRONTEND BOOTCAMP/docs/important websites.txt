@@ -34,3 +34,27 @@ https://shuffle.dev/editor?project=53462f0f0fc7c7490fd3f69f89ec506b84f32eea
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 https://ianlunn.github.io/Hover/
+
+http://mattboldt.github.io/typed.js/
+
+https://animate.style/
+
+https://michalsnik.github.io/aos/
+
+https://locomotivemtl.github.io/locomotive-scroll/
+
+https://scrollmagic.io/
+
+https://swiperjs.com/demos
+
+
+
+FREE BOOTSTRAP 5 TEMPLATES
+
+https://bootstrapmade.com/
+
+https://www.creative-tim.com/bootstrap-themes/free
+
+https://mobirise.com/bootstrap-template/
+
+https://themewagon.com/theme_tag/free/
