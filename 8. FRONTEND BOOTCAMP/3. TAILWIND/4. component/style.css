@@ -1,0 +1,20 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+.code {
+  background: #e5e7eb;
+  color: #121212;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 30px;
+  font-weight: 16px;
+}
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 30px;
+}
+.code:hover {
+  background-color: #d1d5db;
+}
