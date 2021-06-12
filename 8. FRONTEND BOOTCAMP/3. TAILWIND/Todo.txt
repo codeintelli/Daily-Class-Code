@@ -1,0 +1,28 @@
+[ + ] WHAT IS TAILWIND?
+
+[ + ] USING TAILWIND VIA CDN
+[ + ] USING TAILWIND WITHOUT POSTCSS
+[ + ] INSTALLING TAILWIND AS POST CSS PLUGIN
+[ + ] PLAYGROUND
+[ + ] PURGE
+
+[ ] COLOR
+[ ] TYPOGRAPHY
+[ ] BACKGROUND
+[ ] SPACING
+[ ] BORDER
+[ ] EFFECT
+[ ] HOVER AND FOCUS
+[ ] BREAKPOINT
+
+
+
+
+commands and package to be install
+npm install autoprefixer win-node-env tailwindcss
+
+
+1. create package
+2. install packages as below above
+3. for postcss add one more package 
+[]
