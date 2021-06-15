@@ -1,0 +1,10 @@
+box-icon use
+parallax effect
+tilt
+owl carousel
+ripple effect
+AOS ANIMATE ON SCROLL
+animate.css
+difference between span and div
+
+how to put black and white features/filter

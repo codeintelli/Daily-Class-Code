@@ -21,8 +21,14 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- animate .css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
   </head>
-  <body>
+  <body class="dark">
     <!-- navbar section start -->
 
     <nav class="navbar navbar-expand-md fixed-top">
@@ -44,25 +50,37 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active text-capitalize" href="#">home</a>
+              <a
+                class="nav-link active text-capitalize"
+                href="#"
+                data-scroll-nav="0"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-capitalize" href="#">features</a>
+              <a class="nav-link text-capitalize" href="#" data-scroll-nav="1"
+                >features</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-capitalize" href="#">screenshot</a>
+              <a class="nav-link text-capitalize" href="#" data-scroll-nav="2"
+                >screenshots</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-capitalize" href="#">testimonials</a>
+              <a class="nav-link text-capitalize" href="#" data-scroll-nav="4"
+                >Testimonials</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-capitalize" href="#">pricing</a>
+              <a class="nav-link text-capitalize" href="#" data-scroll-nav="5"
+                >Pricing</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-capitalize" href="#">contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-capitalize" href="#">screenshot</a>
+              <a class="nav-link text-capitalize" href="#" data-scroll-nav="6"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
@@ -72,7 +90,7 @@
 
     <!-- header/hero section start -->
 
-    <section class="home d-flex align-items-center">
+    <section class="home d-flex align-items-center" data-scroll-index="0">
       <div class="effect-wrap">
         <i class="bx bx-plus effect effect-1"></i>
         <i class="bx bx-plus effect effect-2"></i>
@@ -88,7 +106,7 @@
                 eius minima sequi.
               </p>
               <div class="home-btn">
-                <a href="#" class="btn btn-l">Download App</a>
+                <a class="btn btn-l" data-scroll-nav="3">Download App</a>
                 <button class="btn btn-l video-play-btn">
                   <i class="bx bx-play"></i>
                   <!-- <i class="fa fa-play"></i> -->
@@ -109,7 +127,7 @@
     <!-- header/hero section end -->
 
     <!-- features section start -->
-    <section class="features section-padding">
+    <section class="features section-padding" data-scroll-index="1">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -257,7 +275,7 @@
     <!-- fun facts section end -->
 
     <!-- app screenshot section start-->
-    <section class="app-screenshot section-padding">
+    <section class="app-screenshot section-padding" data-scroll-index="2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -295,16 +313,129 @@
         </div>
       </div>
     </section>
-    <!-- app screenshot section end -->
 
     <!-- download application section start -->
+    <section
+      class="app-download section-padding"
+      id="ripple-effect"
+      data-scroll-index="3"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>download <span>Application</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="my-5"></div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-4 col-md-4">
+            <div data-tilt class="js-tilt">
+              <div class="app-download-item">
+                <i class="bx bxl-play-store"></i>
+                <h3>Google Play</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore eius quasi labore repellendus
+                </p>
+                <a href="#" class="btn btn-2">Download </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div data-tilt class="js-tilt">
+              <div class="app-download-item">
+                <i class="bx bxl-apple"></i>
+                <h3>Apple Store</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore eius quasi labore repellendus
+                </p>
+                <a href="#" class="btn btn-2">Download</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div data-tilt class="js-tilt">
+              <div class="app-download-item glass">
+                <i class="bx bxl-windows"></i>
+                <h3>Microsoft Store</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Inventore eius quasi labore repellendus
+                </p>
+                <a href="#" class="btn btn-2">Download</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- download application section end -->
 
     <!-- how it works start -->
+    <section class="how-it-works section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>how it <span>Works ?</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="my-5"></div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="how-it-works-item line-right">
+              <div class="step">1</div>
+              <h3>Download</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                earum non voluptates temporibus! Ullam.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="how-it-works-item line-right">
+              <div class="step">2</div>
+              <h3>Create Profile</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                earum non voluptates temporibus! Ullam.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="how-it-works-item line-right">
+              <div class="step">3</div>
+              <h3>Search Products</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                earum non voluptates temporibus! Ullam.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="how-it-works-item">
+              <div class="step">4</div>
+              <h3>Order</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                earum non voluptates temporibus! Ullam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- how it works end -->
 
     <!-- what our Client Say -->
-    <section class="testimonial section-padding">
+    <section class="testimonial section-padding" data-scroll-index="4">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
@@ -442,6 +573,106 @@
     <!-- what our Client Say end -->
 
     <!-- pricing plan -->
+    <section class="pricing section-padding" data-scroll-index="5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Pricing <span>plan</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="my-5"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>Basic</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">$</span>
+                <span class="price">99</span>
+                <span class="period">/monthly</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="bx bx-check"></i> 5 GB Bandwidth</li>
+
+                  <li><i class="bx bx-check"></i> Free Update</li>
+
+                  <li><i class="bx bx-check"></i> High Regulation</li>
+
+                  <li><i class="bx bx-check"></i> Branding</li>
+
+                  <li><i class="bx bx-check"></i> Another Great Features</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="" class="btn btn-2">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>Premium</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">$</span>
+                <span class="price">199</span>
+                <span class="period">/monthly</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="bx bx-check"></i> 5 GB Bandwidth</li>
+
+                  <li><i class="bx bx-check"></i> Free Update</li>
+
+                  <li><i class="bx bx-check"></i> High Regulation</li>
+
+                  <li><i class="bx bx-check"></i> Branding</li>
+
+                  <li><i class="bx bx-check"></i> Another Great Features</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="" class="btn btn-2">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="pricing-plan">
+              <div class="pricing-header">
+                <h3>Unlimited</h3>
+              </div>
+              <div class="pricing-price">
+                <span class="currency">$</span>
+                <span class="price">299</span>
+                <span class="period">/monthly</span>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li><i class="bx bx-check"></i> 5 GB Bandwidth</li>
+
+                  <li><i class="bx bx-check"></i> Free Update</li>
+
+                  <li><i class="bx bx-check"></i> High Regulation</li>
+
+                  <li><i class="bx bx-check"></i> Branding</li>
+
+                  <li><i class="bx bx-check"></i> Another Great Features</li>
+                </ul>
+              </div>
+              <div class="pricing-footer">
+                <a href="" class="btn btn-2">Get Started</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- pricing plan end -->
 
     <!-- team member start -->
@@ -494,27 +725,335 @@
     <!-- team member end -->
 
     <!-- faq -->
+    <section class="faq section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Frequently<span> Asked </span>Question ?</h2>
+            </div>
+          </div>
+        </div>
+        <div class="my-5"></div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div id="accordion">
+              <div class="accordion-item">
+                <div
+                  class="accordion-header collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse-01"
+                >
+                  <h3>100% Fluid Responsive</h3>
+                  <i class="bx bx-plus add"></i>
+                  <i class="bx bx-minus none"></i>
+                </div>
+                <div class="collapse" id="collapse-01" data-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolor aut temporibus, itaque aspernatur officia
+                      similique.Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Dolor aut temporibus, itaque aspernatur
+                      officia similique.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div
+                  class="accordion-header collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse-02"
+                >
+                  <h3>Clean Code</h3>
+                  <i class="bx bx-plus add"></i>
+                  <i class="bx bx-minus none"></i>
+                </div>
+                <div class="collapse" id="collapse-02" data-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolor aut temporibus, itaque aspernatur officia
+                      similique.Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Dolor aut temporibus, itaque aspernatur
+                      officia similique.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div
+                  class="accordion-header collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse-03"
+                >
+                  <h3>Data Free Code</h3>
+                  <i class="bx bx-plus add"></i>
+                  <i class="bx bx-minus none"></i>
+                </div>
+                <div class="collapse" id="collapse-03" data-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolor aut temporibus, itaque aspernatur officia
+                      similique.Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Dolor aut temporibus, itaque aspernatur
+                      officia similique.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div
+                  class="accordion-header collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse-04"
+                >
+                  <h3>Awesome Code</h3>
+                  <i class="bx bx-plus add"></i>
+                  <i class="bx bx-minus none"></i>
+                </div>
+                <div class="collapse" id="collapse-04" data-parent="#accordion">
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolor aut temporibus, itaque aspernatur officia
+                      similique.Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Dolor aut temporibus, itaque aspernatur
+                      officia similique.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div
+                  class="accordion-header collapsed"
+                  data-toggle="collapse"
+                  data-target="#collapse-05"
+                >
+                  <h3>Whole Code</h3>
+                  <i class="bx bx-plus add"></i>
+                  <i class="bx bx-minus none"></i>
+                </div>
+                <div
+                  class="collapse collapsed"
+                  id="collapse-05"
+                  data-parent="#accordion"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Dolor aut temporibus, itaque aspernatur officia
+                      similique.Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Dolor aut temporibus, itaque aspernatur
+                      officia similique.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- faq end -->
 
     <!-- get in touch  -->
+    <section class="contact section-padding" data-scroll-index="6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title">
+              <h2>Get In <span>Touch ?</span></h2>
+            </div>
+          </div>
+        </div>
+        <div class="mt-5"></div>
+        <div class="row">
+          <div class="col-lg-4 col-md-5">
+            <div class="contact-info">
+              <h3>For Any Query And Support</h3>
+              <div class="contact-info-item">
+                <i class="bx bx-location-plus"></i>
+                <h3>Company Location</h3>
+                <p>199 xyz gali, New Delhi</p>
+              </div>
+
+              <div class="contact-info-item">
+                <i class="bx bx-envelope"></i>
+                <h3>Write to us at</h3>
+                <p>info@gmail.com</p>
+              </div>
+
+              <div class="contact-info-item">
+                <i class="bx bxs-phone-call"></i>
+                <h3>Call us on</h3>
+                <p>+91 2222 2222 **</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-7">
+            <div class="contact-form">
+              <form action="">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        placeholder="Your Name"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        autocomplete="off"
+                        placeholder="Your email"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input
+                        type="number"
+                        autocomplete="off"
+                        placeholder="Your Phone"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        autocomplete="off"
+                        placeholder="Your Subject"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea
+                        autocomplete="off"
+                        placeholder="Your Message"
+                        class="form-control"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <buttton type="submit" id="custom" class="btn btn-2"
+                      >Send Message</buttton
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- get in touch end -->
 
     <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quos tempore dolor.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Latest Blogs</a></li>
+                <li><a href="#">App Services</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#" data-scroll-goto="0">Home</a></li>
+                <li><a href="#" data-scroll-goto="1">Features</a></li>
+                <li><a href="#" data-scroll-goto="2">Screenshots</a></li>
+                <li><a href="#" data-scroll-goto="5">Pricing</a></li>
+                <li><a href="#" data-scroll-goto="4">Testimonials</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-col">
+              <h3>Social</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="copyright-text">&copy;2021 @ The Code Intelli</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- footer section -->
+
+    <!-- DARK MODE AND LIGHT MODE -->
+    <!-- toggle theme start -->
+    <div class="toogle-theme">
+      <i class="bx bx-moon"></i>
+    </div>
+    <!-- toggle theme end -->
+    <!-- DARK MODE AND LIGHT MODE END -->
 
     <!-- video popup start -->
     <div class="video-popup">
       <div class="video-popup-inner">
         <i class="bx bx-x video-popup-close"></i>
         <div class="iframe-box">
-          <iframe
+          <!-- <iframe
             id="player-1"
             src="https://www.youtube.com/embed/sq8yDhlUfUE"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
     </div>
@@ -524,6 +1063,8 @@
     <script src="./js/jquery.min.js"></script>
     <!-- popper file -->
     <script src="./js/popper.min.js"></script>
+    <!-- ripple effect -->
+    <!-- <script src="./js/jquery.ripples-min.js"></script> -->
     <!-- bootstrap file -->
     <script src="./js/bootstrap.min.js"></script>
     <!-- owl carousel file -->

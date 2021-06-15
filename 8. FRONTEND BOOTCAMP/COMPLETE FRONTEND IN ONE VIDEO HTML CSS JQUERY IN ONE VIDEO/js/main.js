@@ -49,6 +49,12 @@ $(document).ready(function () {
     scale: 1.03,
   });
 
+  // // * RIPPLE EFFECT
+  // $("#ripple-effect").ripples({
+  //   dropRadius: 20,
+  //   perturbance: 0,
+  // });
+
   //* Feature Section
   $(".screenshot-carousel").owlCarousel({
     loop: true,
@@ -108,5 +114,49 @@ $(document).ready(function () {
         items: 3,
       },
     },
+  });
+
+  // scroll it
+
+  $.scrollIt({
+    topOffset: -50,
+  });
+
+  // DARK MODE AND LIGHT MODE LOGIC
+  function toggleTheme() {
+    if (localStorage.getItem("code-intelli") !== null) {
+      if (localStorage.getItem("code-intelli") === "dark") {
+        $("body").addClass("dark");
+      } else {
+        $("body").removeClass("dark");
+      }
+    }
+    updateIcon();
+  }
+  $(".toogle-theme i").on("click", function () {
+    $("body").toggleClass("dark");
+    if ($("body").hasClass("dark")) {
+      localStorage.setItem("code-intelli", "dark");
+    } else {
+      localStorage.setItem("code-intelli", "light");
+    }
+    updateIcon();
+  });
+
+  toggleTheme();
+
+  function updateIcon() {
+    if ($("body").hasClass("dark")) {
+      $(".toogle-theme i").removeClass("bx-moon");
+      $(".toogle-theme i").addClass("bx-sun");
+    } else {
+      $(".toogle-theme i").removeClass("bx-sun");
+      $(".toogle-theme i").addClass("bx-moon");
+    }
+  }
+
+  // navbar-collapse
+  $(".nav-link").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
   });
 });
