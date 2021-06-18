@@ -1,9 +1,9 @@
 import React from "react";
 
-function Heading() {
+function Heading(data) {
   return (
     <>
-      <h1>My Favourite Games List</h1>
+      <h1>{data.header}</h1>
     </>
   );
 }

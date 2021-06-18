@@ -1,12 +1,14 @@
 import React from "react";
 
-function List() {
+function List(props) {
   return (
     <>
       <ul>
-        <li>Football</li>
-        <li>Cricket</li>
-        <li>Hockey</li>
+        <li>{props.one}</li>
+        <li>{props.two}</li>
+        <li>{props.three}</li>
+        <li>{props.four}</li>
+        <li>{props.five}</li>
       </ul>
     </>
   );
