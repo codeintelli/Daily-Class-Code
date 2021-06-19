@@ -1,8 +1,9 @@
 import React from "react";
 import List from "./list";
 import Heading from "./heading";
-// import Netflix from "./Netflix";
-import NetflixArr from "./NetflixArr";
+import Netflix from "./Components/NetfliCard";
+import MapDestructure from "./Components/Map";
+// import NetflixArr from "./NetflixArr";
 // import Challange3 from "./Challange3";
 // import "./App.css";
 // import ImpExp from "./ImpExp";
@@ -37,7 +38,8 @@ function App() {
       /> */}
 
       {/* <Netflix /> */}
-      <NetflixArr />
+      {/* <NetflixArr /> */}
+      <MapDestructure />
     </>
   );
 }
