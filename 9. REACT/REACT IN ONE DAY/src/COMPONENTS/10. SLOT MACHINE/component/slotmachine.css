@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.slot__inner {
+  text-align: center;
+}
+.slotmachine {
+  text-align: center;
+  margin: auto;
+
+  height: 30%;
+  width: 30%;
+}
+.slotmachine h1 {
+  background-color: #fff;
+  color: #898989;
+}
