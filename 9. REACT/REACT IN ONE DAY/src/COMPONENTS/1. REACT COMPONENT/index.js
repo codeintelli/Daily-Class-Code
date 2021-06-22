@@ -9,6 +9,7 @@ const ReactComponents = () => {
       <Heading />
       <Para />
       <List />
+     
       {/* <List />
       <List />
       <List /> */}

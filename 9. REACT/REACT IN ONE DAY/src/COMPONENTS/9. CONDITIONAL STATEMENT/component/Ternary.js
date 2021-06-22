@@ -11,4 +11,5 @@ const Ternary = () => {
     </>
   );
 };
+
 export default Ternary;

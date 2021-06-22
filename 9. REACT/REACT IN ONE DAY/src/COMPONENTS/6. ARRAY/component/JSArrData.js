@@ -1,6 +1,7 @@
 import Arrdata from "./Arrdata";
 import Card from "./Card";
 
+
 function ArrayData() {
   return (
     <>

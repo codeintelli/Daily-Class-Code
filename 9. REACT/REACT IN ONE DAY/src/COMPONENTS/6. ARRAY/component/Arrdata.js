@@ -17,7 +17,6 @@ const arrdata = [
     link:
       "https://www.imdb.com/title/tt6077448/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=&pf_rd_r=6N2TFYAY6Y5FS0SZP77P&pf_rd_s=center-3&pf_rd_t=60601&pf_rd_i=&ref_=il_tl_li_tt",
   },
-
   {
     id: 3,
     imgsrc:

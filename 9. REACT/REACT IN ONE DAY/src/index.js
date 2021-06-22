@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import ReactComponent from "./COMPONENTS/1. REACT COMPONENT";
 import MiniProject from "./COMPONENTS/2. MINI PROJECT";
 import ImportExport from "./COMPONENTS/3. IMPORT EXPORT";
@@ -27,10 +28,10 @@ import ArrayDest from "./COMPONENTS/12. ARRAY DESTRUCTURING";
 *************************
 */
 
-ReactDOM.render(
-  <h1>Jay Shree Ganesha, Har Har Mahadev</h1>,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <h1>Jay Shree Ganesha, Har Har Mahadev</h1>,
+//   document.getElementById("root")
+// );
 // var h1 = document.createElement("h1");
 // h1.innerHTML = "Jay Shree Ganesha";
 // document.getElementById("root").appendChild(h1);
@@ -164,7 +165,7 @@ const img3 = "https://picsum.photos/300/300";
 const links = "https://google.com";
 // ReactDOM.render(
 //   <>
-//     <h1 contentEditable="true">Hello This Is Shiva</h1>
+//     <h1 className="heading" contentEditable="true">Hello This Is Shiva</h1>
 //     <img src={img1} alt="DEMO " />
 //     <img src={img2} alt="DEMO " />
 //     <a href={links} target="_itvmh">
@@ -223,7 +224,7 @@ const links = "https://google.com";
 // ReactDOM.render(
 //   <>
 //     {/* ~internal css */}
-//     {/* <h1 style={headingInline}>Hello This Is Shiva</h1>
+//   <h1 style={headingInline}>Hello This Is Shiva</h1>
 //     {/* inline css */}
 //     <div style={{ display: "flex", justifyContent: "center" }}>
 //       <img src={img1} alt="DEMO " />
@@ -234,7 +235,7 @@ const links = "https://google.com";
 //     </div>
 //   </>,
 //   document.getElementById("root")
-// ); */}
+// ); 
 
 /* 
 ******************
@@ -343,6 +344,8 @@ const links = "https://google.com";
 /* 
 ******************
 
+
+
 [ ] 🤩🤩🤩🤩 ARRAY IN REACT JS
 
 ******************
@@ -398,7 +401,7 @@ const links = "https://google.com";
 ******************
 */
 
-// ReactDOM.render(<SlotMachine></SlotMachine>, document.getElementById("root"));
+ReactDOM.render(<SlotMachine></SlotMachine>, document.getElementById("root"));
 
 /* 
 ******************

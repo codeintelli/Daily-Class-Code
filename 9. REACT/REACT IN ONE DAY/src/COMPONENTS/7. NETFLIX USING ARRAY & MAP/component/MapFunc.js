@@ -12,12 +12,15 @@ array -> Optional, the array map was called upon.
 And thisValue is to use as this when executing callback.
 
 */
+
+
+
 function MapData() {
   return (
     <>
       <h1 className="heading_style">Top 5 netflix Series</h1>;
       {Arrdata.map((value, index) => {
-        console.log(index);
+        console.log(value);
         return (
           <Card
             key={value.id}
