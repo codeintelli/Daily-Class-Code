@@ -1,0 +1,26 @@
+~ STEP 1:- FOLDER STRUCTURE
+
+[ + ] CSS
+    [ + ] bootstrap.min.css
+    [ + ] fontawesome.min.css
+    [ + ] owl-carousel.min.css
+    [ + ] style.css
+[ + ] IMAGES
+[ + ] JS
+    * bootstrap.min.js
+    * jquery.min.js
+    * jquery-ripple-effect.js
+    * main.js
+    * owl-carousel.js
+    * popper.min.js
+    * scrollIt.min.js
+    * tilt.js
+[ + ] INDEX.HTML
+[ + ] TODO.txt
+
+
+
+~ STEP 2:- LINK ALL CSS AND JS IN YOUR FILE 
+~ STEP 3:- DEFINE ALL COMPONENT HERE USING COMMENT AND CODE IT 
+!STEP 4:-  CHECK RESPONSIVENESS
+!STEP 5:-  PUT LIGHT MODE AND DARK MODE THERE

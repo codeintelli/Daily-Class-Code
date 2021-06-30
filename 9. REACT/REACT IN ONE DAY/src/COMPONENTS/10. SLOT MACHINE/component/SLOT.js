@@ -48,9 +48,4 @@ const SlotMachine = () => {
   );
 };
 
-
-
-
-
-
 export default SlotMachine;
