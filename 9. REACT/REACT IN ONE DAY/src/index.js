@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import ReactComponent from "./COMPONENTS/1. REACT COMPONENT";
-import MiniProject from "./COMPONENTS/2. MINI PROJECT";
-import ImportExport from "./COMPONENTS/3. IMPORT EXPORT";
-import SimpleCalc from "./COMPONENTS/4. SIMPLE CALC";
-import Props from "./COMPONENTS/5. PROPS/";
-import ReactArray from "./COMPONENTS/6. ARRAY";
-import ArrayMap from "./COMPONENTS/7. NETFLIX USING ARRAY & MAP";
-import IfElse from "./COMPONENTS/8. IF ELSE";
-import Ternary from "./COMPONENTS/9. CONDITIONAL STATEMENT";
-import SlotMachine from "./COMPONENTS/10. SLOT MACHINE";
-import Emojie from "./COMPONENTS/11. EMOJIE";
-import ArrayDest from "./COMPONENTS/12. ARRAY DESTRUCTURING";
+// import ReactComponent from "./COMPONENTS/1. REACT COMPONENT";
+// import MiniProject from "./COMPONENTS/2. MINI PROJECT";
+// import ImportExport from "./COMPONENTS/3. IMPORT EXPORT";
+// import SimpleCalc from "./COMPONENTS/4. SIMPLE CALC";
+// import Props from "./COMPONENTS/5. PROPS/";
+// import ReactArray from "./COMPONENTS/6. ARRAY";
+// import ArrayMap from "./COMPONENTS/7. NETFLIX USING ARRAY & MAP";
+// import IfElse from "./COMPONENTS/8. IF ELSE";
+// import Ternary from "./COMPONENTS/9. CONDITIONAL STATEMENT";
+// import SlotMachine from "./COMPONENTS/10. SLOT MACHINE";
+// import Emojie from "./COMPONENTS/11. EMOJIE";
+// import ArrayDest from "./COMPONENTS/12. ARRAY DESTRUCTURING";
+// import Hooks from "./COMPONENTS/13. HOOKS";
+import Hooks from "./COMPONENTS/14. HOOKS EXAMPLE";
 
 /*
 *********************** 
@@ -159,10 +161,10 @@ import ArrayDest from "./COMPONENTS/12. ARRAY DESTRUCTURING";
 [ ] 🤩🤩🤩🤩  JSX ATTRIBUTE
 *************************
 */
-const img1 = "https://picsum.photos/200/300";
-const img2 = "https://picsum.photos/250/300";
-const img3 = "https://picsum.photos/300/300";
-const links = "https://google.com";
+// const img1 = "https://picsum.photos/200/300";
+// const img2 = "https://picsum.photos/250/300";
+// const img3 = "https://picsum.photos/300/300";
+// const links = "https://google.com";
 // ReactDOM.render(
 //   <>
 //     <h1 className="heading" contentEditable="true">Hello This Is Shiva</h1>
@@ -235,7 +237,7 @@ const links = "https://google.com";
 //     </div>
 //   </>,
 //   document.getElementById("root")
-// ); 
+// );
 
 /* 
 ******************
@@ -401,7 +403,7 @@ const links = "https://google.com";
 ******************
 */
 
-ReactDOM.render(<SlotMachine></SlotMachine>, document.getElementById("root"));
+// ReactDOM.render(<SlotMachine></SlotMachine>, document.getElementById("root"));
 
 /* 
 ******************
@@ -421,3 +423,18 @@ ReactDOM.render(<SlotMachine></SlotMachine>, document.getElementById("root"));
 */
 
 // ReactDOM.render(<ArrayDest></ArrayDest>, document.getElementById("root"));
+
+/* 
+
+
+[ ] Hooks in React JS in Hindi - useState in Hook in React JS  
+
+
+*/
+// ReactDOM.render(<Hooks></Hooks>, document.getElementById("root"));
+
+/* 
+[ ] React Hooks Challenge #6- Get Time on Refreshing and Clicking Button using useState Hook
+
+*/
+ReactDOM.render(<Hooks></Hooks>, document.getElementById("root"));
