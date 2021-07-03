@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #9559b6;
+}
+h1 {
+  background-color: #9559b6;
+}
+input {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-align: center;
+}
+
+button {
+  padding: 15px 20px;
+  background: #9559b6;
+  color: white;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
