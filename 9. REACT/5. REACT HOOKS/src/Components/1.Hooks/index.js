@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// let count = 1[ initial value];
+// let count = 1[initial value];
 // const Incr = () => {
 //   count++;[function]
 //   console.log("clicked", count);
@@ -12,16 +12,17 @@ const Index = () => {
   //   const [state, setstate] = useState(initialState)
 
   //   const [currentvalue , function ] = useState(initial value)
-  const [count, setCount] = useState(0);
+  // let count = 30;
+  const [count, setCount] = useState(30);
 
   //   const Incr ;
 
   return (
     <>
-      <p>{count}</p>
+      <p className='heading'>{count}</p>
       <button
         onClick={() => {
-          setCount(count + 1);
+          setCount(count * 2);
         }}>
         Click Me
       </button>

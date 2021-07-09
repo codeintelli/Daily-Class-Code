@@ -26,6 +26,12 @@ input {
   text-align: center;
 }
 
+p {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
 button {
   padding: 15px 20px;
   background: #9559b6;

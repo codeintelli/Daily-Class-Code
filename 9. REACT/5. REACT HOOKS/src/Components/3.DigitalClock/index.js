@@ -8,7 +8,7 @@ const Hooks = () => {
     newTime = new Date().toLocaleTimeString();
     uptime(newTime);
   };
-  setInterval(RefTime, 5000);
+  setInterval(RefTime, 1000);
   return (
     <>
       <p>{ctime}</p>

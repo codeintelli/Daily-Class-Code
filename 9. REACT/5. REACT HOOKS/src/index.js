@@ -5,14 +5,16 @@ import ReactDOM from "react-dom";
 import "./css/hooks.css";
 
 // importing components
-import Hooks from "./Components/1.Hooks";
-import HooksChallange from "./Components/2.HooksChallange";
-import DigitalClock from "./Components/3.DigitalClock";
+// import App from "./Components/App"
+// import HooksChallange from "./Components/2.HooksChallange";
+// import DigitalClock from "./Components/3.DigitalClock";
+// import Events from "./Components/3.0.Events";
+import Forms from "./Components/4.Forms";
 /*
  *  😍😎🤩 Hooks in React JS in Hindi - useState in Hook in React JS
  */
 
-// ReactDOM.render(<Hooks></Hooks>, document.getElementById("root"));
+// ReactDOM.render(<App></App>, document.getElementById("root"));
 /* 
 
 *  😍😎🤩 React Hooks Challenge #6- Get Time on Refreshing and Clicking Button using useState Hook
@@ -20,10 +22,7 @@ import DigitalClock from "./Components/3.DigitalClock";
 
 */
 
-// ReactDOM.render(
-//   <HooksChallange></HooksChallange>,
-//   document.getElementById("root")
-// );
+// ReactDOM.render(<HooksChallange />, document.getElementById("root"));
 
 /* 
 
@@ -43,7 +42,7 @@ import DigitalClock from "./Components/3.DigitalClock";
 
 */
 
-// ReactDOM.render(<></>, document.getElementById("root"));
+// ReactDOM.render(<Events></Events>, document.getElementById("root"));
 
 /* 
 
@@ -53,7 +52,7 @@ import DigitalClock from "./Components/3.DigitalClock";
 
 */
 
-ReactDOM.render(<></>, document.getElementById("root"));
+ReactDOM.render(<Forms></Forms>, document.getElementById("root"));
 
 /* 
 
