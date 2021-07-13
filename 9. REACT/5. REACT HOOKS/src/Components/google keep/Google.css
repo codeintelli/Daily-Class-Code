@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+.google {
+  background-color: #ecf0f1;
+  height: 100vh;
+  width: 100%;
+}
+.header {
+  width: 100%;
+  line-height: 100px;
+  background-color: #fdcb6e;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 50px;
+  color: white;
+  box-shadow: 5px 3px 15px -5px rgba(0, 0, 0, 0.5);
+}
+.header h1 {
+  margin-left: 20px;
+}
+
+.main_note {
+  width: 500px;
+  padding: 15px 10px 5px 10px;
+  margin: 20px auto;
+}
+/* Button:hover {
+  background: transparent !important;
+} */ 
+.my_notes h1 {
+  color: #34495e;
+}
+.my_notes p {
+  color: grey;
+}
+
+form {
+  min-height: 50px;
+  color: #ecf0f1;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  position: relative;
+}
+input,
+textarea {
+  width: 100%;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+textarea {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.MuiButton-root {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -28px;
+  left: 400px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 50%;
+}
+
+.MuiButton-root .plus_sign {
+  font-size: 45px;
+  font-weight: 800;
+  color: #f4b400;
+  cursor: pointer;
+  z-index: 222;
+  background: transparent;
+}
+
+.MuiButton-root:hover {
+  background: #f4b400;
+  border-radius: 50%;
+}
+
+.MuiButton-root:hover .plus_sign {
+  color: #fff;
+  background: #f4b400;
+  border-radius: 50%;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note .btn {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f4b400;
+  border: none;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 3px 3px 15px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.deleteIcon {
+  width: 0.7em;
+  height: 0.7em;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.note .btn:hover {
+  background: #f5ba13;
+  transition: all 0.3s ease-in-out;
+}
+.note .btn:hover .deleteIcon {
+  color: #000;
+  transition: all 0.3s ease-in-out;
+
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: #f4b400;
+}

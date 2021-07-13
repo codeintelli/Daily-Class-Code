@@ -32,6 +32,13 @@ p {
   margin-bottom: 40px;
 }
 
+input {
+  width: 300px;
+  border: 1px solid #000;
+  /* color: #fff; */
+  /* background: transparent; */
+}
+
 button {
   padding: 15px 20px;
   background: #9559b6;
