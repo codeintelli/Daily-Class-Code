@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 // importing Stylesheet
-// import "./css/hooks.css";
+import "./css/hooks.css";
 
 import GoogleKeep from "./Components/google keep/App";
 // importing components
@@ -10,8 +10,10 @@ import GoogleKeep from "./Components/google keep/App";
 // import HooksChallange from "./Components/2.HooksChallange";
 // import DigitalClock from "./Components/3.DigitalClock";
 // import Events from "./Components/3.0.Events";
-import Login from "./Components/5.LoginForm";
-import Forms from "./Components/4.Forms";
+// import Forms from "./Components/4.Forms";
+// import Login from "./Components/5.LoginForm";
+// import MultipleInput from "./Components/6.MultipltInput";
+import RegistrationChallange from "./Components/7.RegistrationChallange";
 /*
  *  😍😎🤩 Hooks in React JS in Hindi - useState in Hook in React JS
  */
@@ -65,7 +67,7 @@ import Forms from "./Components/4.Forms";
 */
 
 // ReactDOM.render(<Login></Login>, document.getElementById("root"));
-ReactDOM.render(<GoogleKeep></GoogleKeep>, document.getElementById("root"));
+// ReactDOM.render(<GoogleKeep></GoogleKeep>, document.getElementById("root"));
 /* 
 
 
@@ -74,7 +76,10 @@ ReactDOM.render(<GoogleKeep></GoogleKeep>, document.getElementById("root"));
 
 */
 
-// ReactDOM.render(<></>, document.getElementById("root"));
+// ReactDOM.render(
+//   <MultipleInput></MultipleInput>,
+//   document.getElementById("root")
+// );
 /* 
 
 
@@ -83,7 +88,10 @@ ReactDOM.render(<GoogleKeep></GoogleKeep>, document.getElementById("root"));
 
 */
 
-// ReactDOM.render(<></>, document.getElementById("root"));
+ReactDOM.render(
+  <RegistrationChallange></RegistrationChallange>,
+  document.getElementById("root")
+);
 /* 
 
 
