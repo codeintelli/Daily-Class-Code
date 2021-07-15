@@ -35,13 +35,7 @@ const Index = () => {
       if (name === "fname") {
         return {
           fname: value,
-          username: preValue.username,
-          email: preValue.email,
-          mob: preValue.mob,
-          address: preValue.address,
-          degree: preValue.degree,
-          erno: preValue.erno,
-          sem: preValue.sem,
+          ...preValue,
         };
       } else if (name === "username") {
         return {
@@ -73,6 +67,7 @@ const Index = () => {
           mob: value,
           address: preValue.address,
           degree: preValue.degree,
+
           erno: preValue.erno,
 
           sem: preValue.sem,

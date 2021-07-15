@@ -13,7 +13,10 @@ import GoogleKeep from "./Components/google keep/App";
 // import Forms from "./Components/4.Forms";
 // import Login from "./Components/5.LoginForm";
 // import MultipleInput from "./Components/6.MultipltInput";
-import RegistrationChallange from "./Components/7.RegistrationChallange";
+// import RegistrationChallange from "./Components/7.RegistrationChallange";
+// import SpreadOperator from "./Components/8.spreadOperator";
+import ShortCode from "./Components/9.ShortCode";
+
 /*
  *  😍😎🤩 Hooks in React JS in Hindi - useState in Hook in React JS
  */
@@ -88,10 +91,10 @@ import RegistrationChallange from "./Components/7.RegistrationChallange";
 
 */
 
-ReactDOM.render(
-  <RegistrationChallange></RegistrationChallange>,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <RegistrationChallange></RegistrationChallange>,
+//   document.getElementById("root")
+// );
 /* 
 
 
@@ -100,7 +103,10 @@ ReactDOM.render(
 
 */
 
-// ReactDOM.render(<></>, document.getElementById("root"));
+// ReactDOM.render(
+//   <SpreadOperator></SpreadOperator>,
+//   document.getElementById("root")
+// );
 /* 
 
 
@@ -109,7 +115,7 @@ ReactDOM.render(
 
 */
 
-// ReactDOM.render(<></>, document.getElementById("root"));
+ReactDOM.render(<ShortCode></ShortCode>, document.getElementById("root"));
 /* 
 
 
