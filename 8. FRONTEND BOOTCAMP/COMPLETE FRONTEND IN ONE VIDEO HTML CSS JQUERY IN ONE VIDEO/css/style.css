@@ -177,7 +177,7 @@ section {
   top: 20%;
   font-size: 40px;
   color: var(--color-2);
-  animation: spin 5s linear infinite;
+  
 }
 .effect-wrap .effect-2 {
   right: 5%;
